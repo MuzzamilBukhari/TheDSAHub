@@ -1,13 +1,8 @@
-export async function getStaticProps({
+export default async function BlogPage({
   params,
 }: {
-  params: { category_name: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { category_name } = params; // Access the parameter
-  // Your logic here
-  return {
-    props: {
-      category_name,
-    },
-  };
+  const slug = (await params).slug;
+  return <div>{slug}: this is blog</div>;
 }
