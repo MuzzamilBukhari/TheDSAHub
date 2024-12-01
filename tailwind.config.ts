@@ -10,7 +10,7 @@ export default {
     extend: {
       colors: {
         primary: "#f7971e",
-        secondary: "#C254DE",
+        secondary: "#f7971e",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
