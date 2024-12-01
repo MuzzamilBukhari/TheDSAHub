@@ -1,6 +1,5 @@
 import React from "react";
 import blogsData from "@/data/blogsData";
-import parse from "html-react-parser";
 
 const page = () => {
   const blogContent = blogsData[0].content;
