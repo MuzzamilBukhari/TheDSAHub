@@ -1,12 +1,13 @@
-import React from "react";
-
-export default async function BlogPage({
+export async function getStaticProps({
   params,
 }: {
-  params: { blog_name: string };
+  params: { category_name: string };
 }) {
-  const { blog_name } = params;
-  console.log(blog_name);
-
-  return <div className="mt-32">{blog_name} page</div>;
+  const { category_name } = params; // Access the parameter
+  // Your logic here
+  return {
+    props: {
+      category_name,
+    },
+  };
 }

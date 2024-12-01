@@ -1,12 +1,13 @@
-import React from "react";
-
-export default async function CategoryPage({
+export async function getStaticProps({
   params,
 }: {
   params: { category_name: string };
 }) {
-  const { category_name } = params;
-  console.log(category_name);
-
-  return <div className="mt-32">{category_name} page</div>;
+  const { category_name } = params; // Access the parameter
+  // Your logic here
+  return {
+    props: {
+      category_name,
+    },
+  };
 }
