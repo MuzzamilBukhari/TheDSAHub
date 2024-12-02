@@ -13,7 +13,7 @@ const Button = ({
   return (
     <button
       type={type}
-      className={`text-white font-medium border-0 py-2 px-4 hover:bg-secondary hover:scale-105 rounded-lg  duration-200 text-lg ${className}`}
+      className={`text-white font-medium border-0 py-2 px-4 hover:bg-primary hover:scale-105 rounded-lg  duration-200 text-lg ${className}`}
     >
       {children}
     </button>

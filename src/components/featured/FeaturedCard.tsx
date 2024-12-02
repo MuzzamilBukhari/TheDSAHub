@@ -5,7 +5,7 @@ import Button from "../Button";
 const FeaturedCard = ({ title, desc }: { title: string; desc: string }) => {
   return (
     <div className="p-4">
-      <div className="h-full border-2 border-secondary rounded-lg overflow-hidden">
+      <div className="h-full border-2 border-primary rounded-lg overflow-hidden">
         <Image
           className="lg:h-48 md:h-36 w-full object-cover object-center"
           src="/images/bg.jpg"
@@ -14,8 +14,8 @@ const FeaturedCard = ({ title, desc }: { title: string; desc: string }) => {
           height={401}
         />
         <div className="p-6 ">
-          <div className="h-40 sm:h-48">
-            <h1 className="title-font text-lg font-medium text-secondary mb-3">
+          <div className="h-[210px] sm:h-[192px]">
+            <h1 className="title-font text-lg font-semibold text-primary mb-3">
               {title}
             </h1>
             <p className="leading-relaxed mb-3">{desc}</p>

@@ -33,7 +33,7 @@ const FeatureSection = () => {
           <Link href="/categories" rel="noopener noreferrer">
             <Button
               type={"button"}
-              className="mt-4 bg-primary hover:bg-secondary hover:scale-105 duration-200"
+              className="mt-4 bg-primary hover:scale-105 duration-200"
             >
               See more
             </Button>

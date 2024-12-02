@@ -9,7 +9,7 @@ const MobNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="text-primary body-font bg-black flex flex-col md:hidden">
+    <header className="text-primary body-font bg-bg2 flex flex-col md:hidden">
       <div className="container mx-auto flex justify-between flex-wrap p-5 items-center">
         <div className="flex justify-center items-center gap-2">
           <Image src={Logo} alt={"DSA Hub"} width={150} height={80} />
@@ -39,7 +39,7 @@ const MobNavbar = () => {
         <nav
           className={`${
             isOpen ? "flex" : "hidden"
-          }  flex-col items-center gap-2 text-base justify-center absolute top-16 -right-4 bg-black rounded-md p-4`}
+          }  flex-col items-center gap-2 text-base justify-center absolute top-16 -right-4 bg-bg2 rounded-md p-4`}
         >
           {navItems.map((item) => (
             <NavLink slug={item.slug} key={item.id} name={item.name} />

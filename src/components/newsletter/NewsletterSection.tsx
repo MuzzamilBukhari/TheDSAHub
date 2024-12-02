@@ -3,7 +3,7 @@ import { SecctionHeader, Input, Button } from "../";
 
 const NewsletterSection = () => {
   return (
-    <section id="newsletter" className="text-secondary body-font">
+    <section id="newsletter" className="text-primary body-font">
       <div className="container px-5 py-32 mb-12 mx-auto">
         <div className="flex flex-col text-center w-full mb-12">
           <SecctionHeader
