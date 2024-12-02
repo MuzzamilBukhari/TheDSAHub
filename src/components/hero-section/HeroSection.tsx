@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-cover bg-center h-screen text-white body-font mt-20 pt-6">
+    <section className="relative bg-cover bg-center h-screen text-white body-font pt-10 sm:pt-24 lg:pt-10 ">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -13,8 +13,8 @@ const HeroSection = () => {
           zIndex: -1,
         }}
       />
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center sm:pb-8">
-        <div className="lg:flex-grow sm:w-1/2 mt-20 lg:mt-28 md:pl-16 flex flex-col sm:items-center sm:text-center mb-16 sm:mb-0  items-center text-center">
+      <div className="container mx-auto px-5 py-24 sm:pb-8">
+        <div className="mt-20 lg:mt-28 md:pl-16 flex flex-col sm:items-center sm:text-center mb-16 sm:mb-0  items-center text-center ">
           <h1 className="title-font text-6xl sm:text-7xl font-bold ">
             Master Data Structures
             <br className="hidden lg:inline-block" />
@@ -28,7 +28,7 @@ const HeroSection = () => {
           <Link className="mt-3" href="/categories" rel="noopener noreferrer">
             <Button
               type={"button"}
-              className="mt-4 bg-secondary hover:bg-primary hover:scale-105 duration-200"
+              className="mt-4 bg-secondary hover:scale-105 duration-200"
             >
               Explore now
             </Button>

@@ -6,6 +6,9 @@ import Featured from "./featured/Featured";
 import NewsletterSection from "./newsletter/NewsletterSection";
 import Footer from "./footer/Footer";
 import Contact from "./contact/Contact";
+import SecctionHeader from "./SecctionHeader";
+import ExploreSection from "./explore/ExploreSection";
+import Input from "./Input";
 
 export {
   Navbar,
@@ -16,4 +19,7 @@ export {
   NewsletterSection,
   Footer,
   Contact,
+  SecctionHeader,
+  ExploreSection,
+  Input,
 };
