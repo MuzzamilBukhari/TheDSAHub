@@ -14,7 +14,7 @@ const FeaturedCard = ({ title, desc }: { title: string; desc: string }) => {
           height={401}
         />
         <div className="p-6 ">
-          <div className="h-[210px] sm:h-[192px]">
+          <div className="h-[260px] sm:h-[192px]">
             <h1 className="title-font text-lg font-semibold text-primary mb-3">
               {title}
             </h1>

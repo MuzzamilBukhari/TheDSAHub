@@ -17,8 +17,8 @@ const ExploreCard = ({
 }) => {
   return (
     <div className="p-4 ">
-      <div className="h-full bg-primary bg-opacity-90 border-2 border-txtcolor  px-8 pt-16 pb-24 rounded-2xl overflow-hidden text-center relative">
-        <div className="h-[180px] sm:h-48  md:h-40">
+      <div className="h-full bg-primary bg-opacity-90  px-8 pt-16 pb-24 rounded-2xl overflow-hidden text-center relative">
+        <div className="h-[190px]  md:h-40">
           <h2 className=" text-xs title-font font-medium text-gray-200 mb-1">
             {category}
           </h2>

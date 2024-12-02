@@ -8,7 +8,7 @@ import Logo from "../../../public/logo.jpg";
 const Navbar = () => {
   return (
     <header className="text-white body-font bg-black hidden md:flex fixed w-full top-0 left-0 z-10 ">
-      <div className="container mx-auto flex flex-wrap py-5 items-center ">
+      <div className="container mx-auto flex flex-wrap px-4 py-5 items-center ">
         <div className="text-primary flex justify-center items-center ">
           <Image src={Logo} alt="DSA Hub" width={200} height={100} />
         </div>

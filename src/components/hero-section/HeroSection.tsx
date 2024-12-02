@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-cover bg-center h-screen text-white body-font pt-10 sm:pt-24 lg:pt-10 ">
+    <section className="relative bg-cover bg-center h-screen text-white body-font pt-0 sm:pt-24 lg:pt-10 ">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
