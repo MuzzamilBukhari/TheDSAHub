@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../";
+import { Button } from "../../";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { IoEyeSharp } from "react-icons/io5";
 import { FaRegCommentDots } from "react-icons/fa";

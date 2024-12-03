@@ -13,7 +13,7 @@ export default function Home() {
         title2=" & Algorithms with Ease!"
         subtitle="Explore in-depth tutorials, practical examples, and interview tips
             to sharpen your problem-solving skills."
-        bgImg="/home-hero-bg.jpg"
+        bgImg="/blog-hero-bg.webp"
         btnText="Explore now"
         btnLink="/categories"
       />

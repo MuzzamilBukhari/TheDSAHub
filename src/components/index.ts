@@ -2,16 +2,19 @@ import Navbar from "./navbar/Navbar";
 import MobNavbar from "./navbar/MobNavbar";
 import Button from "./Button";
 import HeroSection from "./hero-section/HeroSection";
-import Featured from "./featured/Featured";
-import NewsletterSection from "./newsletter/NewsletterSection";
+import Featured from "./homepage-components/featured/Featured";
+import NewsletterSection from "./homepage-components/newsletter/NewsletterSection";
 import Footer from "./footer/Footer";
-import Contact from "./contact/Contact";
-import SecctionHeader from "./SecctionHeader";
-import ExploreSection from "./explore/ExploreSection";
+import Contact from "./contact/ContactSection";
+import SectionHeader from "./SectionHeader";
+import ExploreSection from "./homepage-components/explore/ExploreSection";
 import Input from "./Input";
-import OurMission from "./mission/OurMission";
-import CreatorAbout from "./creatorAbout/CreatorAbout";
-import ThankyouSection from "./thankyou/ThankyouSection";
+import OurMission from "./aboutpage-component/mission/OurMission";
+import CreatorAbout from "./aboutpage-component/creatorAbout/CreatorAbout";
+import ThankyouSection from "./aboutpage-component/thankyou/ThankyouSection";
+import ContactSection from "./contact/ContactSection";
+import BlogCard from "./blogs/blogCard";
+import BlogSection from "./blogs/BlogSection";
 
 export {
   Navbar,
@@ -22,10 +25,13 @@ export {
   NewsletterSection,
   Footer,
   Contact,
-  SecctionHeader,
+  SectionHeader,
   ExploreSection,
   Input,
   OurMission,
   CreatorAbout,
   ThankyouSection,
+  ContactSection,
+  BlogCard,
+  BlogSection,
 };

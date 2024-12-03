@@ -14,6 +14,7 @@ const SocialLink = ({
     <a
       className="ml-3 text-gray-600 hover:text-primary duration-300"
       href={link}
+      target="_blank"
     >
       <Icon size={size} />
     </a>

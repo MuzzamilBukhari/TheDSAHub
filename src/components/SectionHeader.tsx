@@ -1,6 +1,6 @@
 import React from "react";
 
-const SecctionHeader = ({
+const SectionHeader = ({
   heading,
   tagline,
   className,
@@ -12,7 +12,7 @@ const SecctionHeader = ({
   return (
     <>
       <h1
-        className={`title-font text-white text-5xl sm:text-6xl md:text-7xl font-bold ${className}`}
+        className={`title-font text-white text-5xl sm:text-6xl md:text-7xl font-extrabold ${className}`}
       >
         {heading}
       </h1>
@@ -23,4 +23,4 @@ const SecctionHeader = ({
   );
 };
 
-export default SecctionHeader;
+export default SectionHeader;

@@ -1,5 +1,5 @@
 import React from "react";
-import { SecctionHeader } from "..";
+import { SectionHeader } from "../../";
 import ExploreCard from "./ExploreCard";
 
 const ExploreSection = () => {
@@ -7,7 +7,7 @@ const ExploreSection = () => {
     <section className="text-gray-300 body-font bg-black/90">
       <div className="container px-5 py-20 mx-auto ">
         <div className="items-center text-center pt-10 pb-20">
-          <SecctionHeader
+          <SectionHeader
             heading="Explore"
             tagline="Unravel the World of Data Structures and Algorithms – One Topic at a Time!"
           />

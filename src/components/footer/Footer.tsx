@@ -1,9 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../../../public/logo.jpg";
-import { FaFacebook, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import SocialLink from "./SocialLink";
+import socialLinks from "@/data/socialLinks";
 
 const Footer = () => {
   return (
@@ -23,19 +22,9 @@ const Footer = () => {
           </a>
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <SocialLink
-            link="https://www.facebook.com/mmuzzamilbukhari/"
-            icon={FaFacebook}
-          />
-          <SocialLink link="https://www.x.com/" icon={FaSquareXTwitter} />
-          <SocialLink
-            link="https://www.instagram.com/mmuzzamilbukhari/"
-            icon={FaInstagramSquare}
-          />
-          <SocialLink
-            link="https://www.linkedin.com/in/muzzamilbukhari"
-            icon={FaLinkedin}
-          />
+          {socialLinks.map((link) => (
+            <SocialLink key={link.id} link={link.link} icon={link.icon} />
+          ))}
         </span>
       </div>
     </footer>

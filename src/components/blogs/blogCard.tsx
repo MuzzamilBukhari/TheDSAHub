@@ -1,8 +1,17 @@
 import React from "react";
 import Image from "next/image";
-import Button from "../Button";
+import Link from "next/link";
+import { Button } from "../";
 
-const FeaturedCard = ({ title, desc }: { title: string; desc: string }) => {
+const BlogCard = ({
+  title,
+  desc,
+  slug = "hac",
+}: {
+  title: string;
+  desc: string;
+  slug?: string;
+}) => {
   return (
     <div className="p-4">
       <div className="h-full border-2 border-primary rounded-lg overflow-hidden">
@@ -21,9 +30,11 @@ const FeaturedCard = ({ title, desc }: { title: string; desc: string }) => {
             <p className="leading-relaxed mb-3">{desc}</p>
           </div>
           <div className="flex justify-center">
-            <Button type="button" className="bg-primary">
-              Read more
-            </Button>
+            <Link href={`/blogs/${slug}`}>
+              <Button type="button" className="bg-primary">
+                Read more
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
@@ -31,4 +42,4 @@ const FeaturedCard = ({ title, desc }: { title: string; desc: string }) => {
   );
 };
 
-export default FeaturedCard;
+export default BlogCard;
