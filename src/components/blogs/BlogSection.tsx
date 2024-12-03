@@ -1,6 +1,4 @@
-import Link from "next/link";
 import React from "react";
-import Button from "../Button";
 import { SectionHeader, BlogCard } from "../";
 
 const BlogSection = () => {

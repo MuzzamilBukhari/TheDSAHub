@@ -14,8 +14,8 @@ const OurMission = () => {
             - At <span className="font-semibold text-primary">the DSA Hub</span>{" "}
             , our mission is to make complex topics in Data Structures and
             Algorithms accessible, engaging, and practical for learners of all
-            levels. <br /> - Whether you're preparing for interviews or
-            enhancing your coding skills, we've got you covered.
+            levels. <br /> - Whether you&apos;re preparing for interviews or
+            enhancing your coding skills, we&apos;ve got you covered.
           </p>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">

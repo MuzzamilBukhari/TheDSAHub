@@ -14,7 +14,7 @@ const HeroSection = ({
   title2?: string;
   subtitle: string;
   btnText?: string;
-  btnLink?: any;
+  btnLink?: URL;
   bgImg: string;
 }) => {
   return (
@@ -37,7 +37,7 @@ const HeroSection = ({
           <p className="font-medium mt-4 leading-relaxed lg:w-2/5">
             {subtitle}
           </p>
-          {btnText && (
+          {btnText && btnLink && (
             <Link className="mt-3" href={btnLink}>
               <Button
                 type="button"
