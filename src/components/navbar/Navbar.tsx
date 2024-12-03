@@ -19,7 +19,7 @@ const Navbar = () => {
         </nav>
         <Button
           type="button"
-          className="py-[2px] ml-8 bg-black border-2 border-none hover:shadow-none shadow-primary ring-2 ring-primary shadow-md"
+          className="py-[2px] ml-8 border-2 border-none hover:shadow-none shadow-primary ring-2 ring-primary shadow-md"
         >
           <a href={"#newsletter"}>Subscribe</a>
         </Button>

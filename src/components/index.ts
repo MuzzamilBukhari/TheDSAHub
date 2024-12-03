@@ -9,6 +9,9 @@ import Contact from "./contact/Contact";
 import SecctionHeader from "./SecctionHeader";
 import ExploreSection from "./explore/ExploreSection";
 import Input from "./Input";
+import OurMission from "./mission/OurMission";
+import CreatorAbout from "./creatorAbout/CreatorAbout";
+import ThankyouSection from "./thankyou/ThankyouSection";
 
 export {
   Navbar,
@@ -22,4 +25,7 @@ export {
   SecctionHeader,
   ExploreSection,
   Input,
+  OurMission,
+  CreatorAbout,
+  ThankyouSection,
 };

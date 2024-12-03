@@ -2,37 +2,51 @@ import React from "react";
 import Button from "../Button";
 import Link from "next/link";
 
-const HeroSection = () => {
+const HeroSection = ({
+  title1,
+  title2,
+  subtitle,
+  btnText,
+  btnLink,
+  bgImg,
+}: {
+  title1: string;
+  title2?: string;
+  subtitle: string;
+  btnText?: string;
+  btnLink?: any;
+  bgImg: string;
+}) => {
   return (
     <section className="relative bg-cover bg-center h-screen text-white body-font pt-0 sm:pt-24 lg:pt-10 ">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/bg1.png')",
-          opacity: 0.65,
+          backgroundImage: `url(${bgImg})`,
+          opacity: 0.25,
           zIndex: -1,
         }}
       />
       <div className="container mx-auto px-5 py-24 sm:pb-8">
-        <div className="mt-20 lg:mt-28 md:pl-16 flex flex-col sm:items-center sm:text-center mb-16 sm:mb-0  items-center text-center ">
-          <h1 className="title-font text-6xl sm:text-7xl font-bold ">
-            Master Data Structures
-            <br className="hidden lg:inline-block" />
-            <span className="text-primary"> & Algorithms with Ease!</span>
-          </h1>
-          <p className="font-medium mt-4 leading-relaxed">
-            Explore in-depth tutorials, practical examples, and interview tips
+        <div className="mt-20 lg:mt-32 md:pl-16 flex flex-col sm:items-center sm:text-center mb-16 sm:mb-0  items-center text-center ">
+          <h1 className="title-font text-5xl sm:text-6xl md:text-7xl font-bold lg:w-3/4 ">
+            {title1}
             <br />
-            to sharpen your problem-solving skills.
+            <span className="text-primary">{title2}</span>
+          </h1>
+          <p className="font-medium mt-4 leading-relaxed lg:w-2/5">
+            {subtitle}
           </p>
-          <Link className="mt-3" href="/categories" rel="noopener noreferrer">
-            <Button
-              type={"button"}
-              className="mt-4 bg-primary hover:scale-105 duration-200"
-            >
-              Explore now
-            </Button>
-          </Link>
+          {btnText && (
+            <Link className="mt-3" href={btnLink}>
+              <Button
+                type="button"
+                className="mt-4 bg-primary hover:scale-105 duration-200"
+              >
+                {btnText}
+              </Button>
+            </Link>
+          )}
         </div>
       </div>
     </section>
