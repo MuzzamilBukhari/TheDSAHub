@@ -6,6 +6,9 @@ import {
 } from "@/components";
 
 export default function Home() {
+  const urlString: string = "/blogs";
+  const url: URL = (urlString as unknown) as URL;
+
   return (
     <>
       <HeroSection
@@ -15,7 +18,7 @@ export default function Home() {
             to sharpen your problem-solving skills."
         bgImg="/blog-hero-bg.webp"
         btnText="Explore now"
-        btnLink="/categories"
+        btnLink={url}
       />
       <Featured />
       <ExploreSection />
