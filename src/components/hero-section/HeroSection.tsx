@@ -9,6 +9,7 @@ const HeroSection = ({
   btnText,
   btnLink,
   bgImg,
+  className,
 }: {
   title1: string;
   title2?: string;
@@ -16,9 +17,12 @@ const HeroSection = ({
   btnText?: string;
   btnLink?: URL;
   bgImg: string;
+  className?: string;
 }) => {
   return (
-    <section className="relative bg-cover bg-center h-screen text-white body-font pt-0 sm:pt-24 lg:pt-10 ">
+    <section
+      className={`relative bg-cover bg-center h-screen text-white body-font pt-0 sm:pt-24 lg:pt-10 ${className} `}
+    >
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{

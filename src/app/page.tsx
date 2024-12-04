@@ -19,6 +19,7 @@ export default function Home() {
         bgImg="/blog-hero-bg.webp"
         btnText="Explore now"
         btnLink={url}
+        className="lg:pt-0"
       />
       <Featured />
       <ExploreSection />
