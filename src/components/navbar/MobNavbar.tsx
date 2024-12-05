@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import NavLink from "./NavLink";
 import navItems from "./navItems";
 import Logo from "../../../public/logo.jpg";
-import Image from "next/image";
+import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
 const MobNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,20 +20,11 @@ const MobNavbar = () => {
           className="text-white block focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
+          {isOpen ? (
+            <RiCloseLine className="w-7 h-7" />
+          ) : (
+            <RiMenu3Line className="w-7 h-7" />
+          )}
         </button>
       </div>
       <div className="">
@@ -42,7 +34,12 @@ const MobNavbar = () => {
           }  flex-col items-center gap-2 text-base justify-center absolute top-16 -right-4 bg-bg2 rounded-md p-4`}
         >
           {navItems.map((item) => (
-            <NavLink slug={item.slug} key={item.id} name={item.name} />
+            <NavLink
+              slug={item.slug}
+              key={item.id}
+              name={item.name}
+              onclick={() => setIsOpen(false)}
+            />
           ))}
         </nav>
       </div>

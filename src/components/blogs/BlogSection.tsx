@@ -1,5 +1,6 @@
 import React from "react";
 import { SectionHeader, BlogCard } from "../";
+import blogs from "@/data/blogsData";
 
 const BlogSection = () => {
   return (
@@ -13,42 +14,13 @@ const BlogSection = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-6 sm:px-0">
-          <BlogCard
-            title="Mastering Recursion: Breaking Down Complex Problems"
-            desc="Learn how recursion simplifies code and solves intricate problems with elegance."
-          />
-          <BlogCard
-            title="Graphs 101: Connecting Data Efficiently"
-            desc="Dive into the world of graphs—representations, traversals, and how they power modern algorithms."
-          />
-          <BlogCard
-            title="Arrays: The Cornerstone of Problem-Solving"
-            desc="Learn why arrays are essential for every programmer. Discover their operations, common pitfalls, and optimization techniques."
-          />
-          <BlogCard
-            title="Mastering Recursion: Breaking Down Complex Problems"
-            desc="Learn how recursion simplifies code and solves intricate problems with elegance."
-          />
-          <BlogCard
-            title="Graphs 101: Connecting Data Efficiently"
-            desc="Dive into the world of graphs—representations, traversals, and how they power modern algorithms."
-          />
-          <BlogCard
-            title="Arrays: The Cornerstone of Problem-Solving"
-            desc="Learn why arrays are essential for every programmer. Discover their operations, common pitfalls, and optimization techniques."
-          />
-          <BlogCard
-            title="Mastering Recursion: Breaking Down Complex Problems"
-            desc="Learn how recursion simplifies code and solves intricate problems with elegance."
-          />
-          <BlogCard
-            title="Graphs 101: Connecting Data Efficiently"
-            desc="Dive into the world of graphs—representations, traversals, and how they power modern algorithms."
-          />
-          <BlogCard
-            title="Arrays: The Cornerstone of Problem-Solving"
-            desc="Learn why arrays are essential for every programmer. Discover their operations, common pitfalls, and optimization techniques."
-          />
+          {blogs.map((blog) => (
+            <BlogCard
+              key={blog.id}
+              title={blog.title}
+              desc={blog.description}
+            />
+          ))}
         </div>
       </div>
     </section>

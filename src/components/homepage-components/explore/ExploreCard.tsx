@@ -3,17 +3,20 @@ import { Button } from "../../";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import { IoEyeSharp } from "react-icons/io5";
 import { FaRegCommentDots } from "react-icons/fa";
+import Link from "next/link";
 
 const ExploreCard = ({
   category,
   title,
   desc,
   btnText,
+  btnLink,
 }: {
   category: string;
   title: string;
   desc: string;
   btnText: string;
+  btnLink: any;
 }) => {
   return (
     <div className="p-4 ">
@@ -28,10 +31,13 @@ const ExploreCard = ({
           <p className="leading-relaxed mb-3">{desc}</p>
         </div>
         <Button type="button" className="border-2 border-gray-300">
-          <a className=" inline-flex items-center">
+          <Link
+            href={`/categories/${btnLink}`}
+            className=" inline-flex items-center"
+          >
             {btnText}
             <HiOutlineArrowSmRight className="w-5 h-5 mr-1" />
-          </a>
+          </Link>
         </Button>
         <div className="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
           <span className="text-gray-200 mr-3 inline-flex items-center leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">

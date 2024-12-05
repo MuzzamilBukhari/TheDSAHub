@@ -6,11 +6,11 @@ import { Button } from "../";
 const BlogCard = ({
   title,
   desc,
-  slug = "hac",
+  slug,
 }: {
   title: string;
   desc: string;
-  slug?: string;
+  slug: string;
 }) => {
   return (
     <div className="p-4">

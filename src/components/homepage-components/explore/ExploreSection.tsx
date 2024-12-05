@@ -1,6 +1,7 @@
 import React from "react";
 import { SectionHeader } from "../../";
 import ExploreCard from "./ExploreCard";
+import categories from "@/data/categoriesData";
 
 const ExploreSection = () => {
   return (
@@ -13,42 +14,15 @@ const ExploreSection = () => {
           />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          <ExploreCard
-            category="ARRAYS"
-            title="The Foundation of Programming"
-            desc="Start your DSA journey by mastering arrays and understanding their practical uses."
-            btnText="Learn more"
-          />
-          <ExploreCard
-            category="LINKED LIST"
-            title="Dynamic Data at Its Best"
-            desc="Explore how linked lists work and solve problems efficiently with pointers."
-            btnText="Explore topic"
-          />
-          <ExploreCard
-            category="STACKS & QUEUES"
-            title="Manage Your Data"
-            desc="Learn how to implement stacks and queues and their applications in problem-solving."
-            btnText="Dive in"
-          />
-          <ExploreCard
-            category="TREES"
-            title="Hierarchical Data Simplified"
-            desc="Understand tree structures, traversal methods, and their use cases."
-            btnText="Explore more"
-          />
-          <ExploreCard
-            category="GRAPHS"
-            title="Connecting the Dots"
-            desc="Decode graphs, algorithms, and their role in complex problem-solving."
-            btnText="Learn Graphs"
-          />
-          <ExploreCard
-            category="SORTING ALGOS"
-            title="Organize Your Data"
-            desc="Master sorting techniques like quicksort, mergesort, and more."
-            btnText="Start learning"
-          />
+          {categories.map((category) => (
+            <ExploreCard
+              category={category.name}
+              title={category.title}
+              desc={category.description}
+              btnText="Learn more"
+              btnLink={category.slug}
+            />
+          ))}
         </div>
       </div>
     </section>
