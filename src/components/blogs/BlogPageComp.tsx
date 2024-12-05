@@ -11,7 +11,7 @@ const BlogPageComp = ({ slug }: { slug: string }) => {
 
   useEffect(() => {
     setBlog(blogs.find((blog) => blog.slug === slug));
-  }, []);
+  }, [slug]);
 
   return (
     blog && (

@@ -16,7 +16,7 @@ const ExploreCard = ({
   title: string;
   desc: string;
   btnText: string;
-  btnLink: any;
+  btnLink: string;
 }) => {
   return (
     <div className="p-4 ">
