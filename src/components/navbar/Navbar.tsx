@@ -55,14 +55,14 @@ const Navbar = () => {
           )}
         </nav>
 
-        <a className="ml-4" href="/">
+        <Link className="ml-4" href="/">
           <Button
             type="button"
             className="py-[2px] ml-8 bg-transparent hover:bg-secondary/85 border-2 border-primary shadow-md"
           >
             Subscribe
           </Button>
-        </a>
+        </Link>
       </div>
     </header>
   );
