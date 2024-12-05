@@ -44,7 +44,10 @@ const Navbar = () => {
                     onMouseLeave={() => setHoveredDropdown(null)}
                   >
                     {categories.map((category) => (
-                      <Link key={category.id} href={category.slug}>
+                      <Link
+                        key={category.id}
+                        href={`/categories/${category.slug}`}
+                      >
                         <button className="block text-left hover:text-primary w-full text-lg py-2 px-2 rounded-md hover:bg-black/80">
                           {category.name}
                         </button>
