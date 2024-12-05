@@ -16,6 +16,7 @@ import ContactSection from "./contact/ContactSection";
 import BlogCard from "./blogs/blogCard";
 import BlogSection from "./blogs/BlogSection";
 import BlogPageComp from "./blogs/BlogPageComp";
+import CategoryComp from "./categories/CategoryComp";
 
 export {
   Navbar,
@@ -36,4 +37,5 @@ export {
   BlogCard,
   BlogSection,
   BlogPageComp,
+  CategoryComp,
 };
