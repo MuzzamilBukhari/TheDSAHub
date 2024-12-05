@@ -1,10 +1,10 @@
 import { BlogPageComp } from "@/components";
 
 const BlogPage = async ({ params }: { params: { blog_name: string } }) => {
-  const slug = params.blog_name;
+  const { blog_name } = params;
   return (
     <>
-      <BlogPageComp slug={slug} />;
+      <BlogPageComp slug={blog_name} />;
     </>
   );
 };
