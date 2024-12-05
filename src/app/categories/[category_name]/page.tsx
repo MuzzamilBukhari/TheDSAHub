@@ -4,9 +4,9 @@ import blogs from "@/data/blogsData";
 const CategoryPage = async ({
   params,
 }: {
-  params: { category_name: string };
+  params: Promise<{ slug: string }>;
 }) => {
-  const slug = params.category_name;
+  const slug = (await params).slug;
   const categoryBlogs = blogs.filter((blog) => blog.categorySlug == slug);
 
   return (
