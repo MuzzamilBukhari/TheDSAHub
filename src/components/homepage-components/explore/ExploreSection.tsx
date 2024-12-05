@@ -16,10 +16,11 @@ const ExploreSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((category) => (
             <ExploreCard
+              key={category.id}
               category={category.name}
               title={category.title}
               desc={category.description}
-              btnText="Learn more"
+              btnText={category.btnText}
               btnLink={category.slug}
             />
           ))}

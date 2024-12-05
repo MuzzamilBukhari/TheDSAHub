@@ -14,7 +14,7 @@ const NavLink = ({
 }) => {
   return (
     <Link
-      href={slug || "/"}
+      href={slug || "/abc"}
       className="text-lg font-medium ring-secondary hover:text-primary hover:underline rounded-lg duration-300 px-3 py-1"
       onClick={onclick}
     >

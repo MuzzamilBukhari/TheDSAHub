@@ -15,6 +15,7 @@ import ThankyouSection from "./aboutpage-component/thankyou/ThankyouSection";
 import ContactSection from "./contact/ContactSection";
 import BlogCard from "./blogs/blogCard";
 import BlogSection from "./blogs/BlogSection";
+import BlogPageComp from "./blogs/BlogPageComp";
 
 export {
   Navbar,
@@ -34,4 +35,5 @@ export {
   ContactSection,
   BlogCard,
   BlogSection,
+  BlogPageComp,
 };

@@ -18,6 +18,7 @@ const BlogSection = () => {
             <BlogCard
               key={blog.id}
               title={blog.title}
+              slug={blog.slug}
               desc={blog.description}
             />
           ))}
