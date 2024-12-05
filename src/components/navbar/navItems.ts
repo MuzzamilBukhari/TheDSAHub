@@ -1,9 +1,9 @@
 const navItems = [
-  { id: 1, name: "Home", slug: "/" },
-  { id: 2, name: "About", slug: "/about" },
-  { id: 3, name: "Blogs", slug: "/blogs" },
-  { id: 4, name: "Explore", slug: "/" },
-  { id: 5, name: "Contact ", slug: "/contact" },
+  { id: 1, name: "Home", slug: "/", hasDropdown: false },
+  { id: 2, name: "About", slug: "/about", hasDropdown: false },
+  { id: 3, name: "Blogs", slug: "/blogs", hasDropdown: false },
+  { id: 4, name: "Explore", slug: "/", hasDropdown: true },
+  { id: 5, name: "Contact ", slug: "/contact", hasDropdown: false },
 ];
 
 export default navItems;

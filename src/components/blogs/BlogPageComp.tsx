@@ -13,22 +13,29 @@ const BlogPageComp = ({ slug }: { slug: string }) => {
     setBlog(blogs.find((blog) => blog.slug === slug));
   }, [slug]);
 
-  return (
-    blog && (
-      <section>
-        <div>
-          <Image src={blog.imgUrl} alt={blog.title} width={700} height={700} />
+  return blog ? (
+    <section>
+      <div className="max-w-4xl mx-auto p-6">
+        <div className="mb-8">
+          <Image
+            src={blog.imgUrl} // Ensure the imageUrl is a valid string
+            alt={blog.title}
+            width={600} // Adjust width based on your design
+            height={288} // Adjust height based on your design
+            className="w-full h-72 object-cover rounded-lg mb-6"
+          />
+          <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>
+          <p className="text-lg mb-6">{blog.description}</p>
+          {/* Render HTML Content */}
+          <div
+            dangerouslySetInnerHTML={{ __html: blog.content }}
+            className="text-base leading-relaxed space-y-4"
+          />
         </div>
-        <div>
-          <h1>{blog.title}</h1>
-          <h2>{blog.description}</h2>
-        </div>
-        <div
-          dangerouslySetInnerHTML={{ __html: blog.content }}
-          className="text-base leading-relaxed space-y-4"
-        />
-      </section>
-    )
+      </div>
+    </section>
+  ) : (
+    <div>No blog found</div>
   );
 };
 

@@ -1,13 +1,14 @@
 import { CategoryComp } from "@/components";
 
-const CategoryPage = async ({
+export default async function Page({
   params,
 }: {
-  params: Promise<{ slug: string }>;
-}) => {
-  const slug = (await params).slug;
-
-  return <CategoryComp slug={slug} />;
-};
-
-export default CategoryPage;
+  params: Promise<{ category_name: string }>;
+}) {
+  const slug = (await params).category_name;
+  return (
+    <>
+      <CategoryComp slug={slug} />
+    </>
+  );
+}

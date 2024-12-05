@@ -31,7 +31,7 @@ const HeroSection = ({
           zIndex: -1,
         }}
       />
-      <div className="container mx-auto px-5 py-16 sm:pb-8">
+      <div className="container mx-auto px-5 py-12 sm:pb-8">
         <div className="mt-20 lg:mt-16 md:pl-16 flex flex-col sm:items-center sm:text-center mb-16 sm:mb-0  items-center text-center ">
           <h1 className="title-font text-5xl sm:text-6xl md:text-7xl font-extrabold lg:w-3/4 ">
             {title1}

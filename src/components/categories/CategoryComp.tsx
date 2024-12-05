@@ -10,6 +10,8 @@ const CategoryComp = ({ slug }: { slug: string }) => {
   );
 
   useEffect(() => {
+    console.log(slug);
+
     setCategoryBlogs(blogs.filter((blog) => blog.categorySlug == slug));
   }, [slug]);
 

@@ -20,7 +20,86 @@ const blogs: Blog[] = [
       "Learn the basics of arrays, including their structure, memory allocation, and how they form the backbone of many algorithms in computer science.",
     imgUrl: "/home-hero-bg.jpg",
     content: `
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat maxime laborum hic ea eum eligendi, repudiandae, culpa amet optio enim consectetur consequuntur sint voluptate. Quibusdam deleniti veritatis harum consequuntur ducimus delectus ullam ipsam quae cum numquam temporibus laudantium reiciendis eos at praesentium placeat, nesciunt nulla? Recusandae non quidem natus. Dignissimos eligendi ducimus qui facere quos architecto, error quia expedita ipsum officia veritatis minima doloremque vel corporis quisquam quo, quam quis enim voluptatibus voluptas hic illum aliquam. Magni enim iste exercitationem minus, dolores a voluptas similique recusandae alias quisquam impedit pariatur ab quae aliquam asperiores placeat at dicta expedita explicabo ex. Dolorum quisquam rem harum perspiciatis numquam, ipsam provident dolores ipsum doloribus maiores adipisci cupiditate suscipit corrupti illo laudantium eum velit libero vitae quia blanditiis accusamus. Expedita natus officia numquam tenetur asperiores, laboriosam suscipit similique tempore inventore delectus, dolorum, modi facere sunt. Sequi culpa architecto laboriosam explicabo, excepturi delectus reprehenderit provident velit expedita accusamus numquam ab ratione rerum eveniet! Praesentium accusamus excepturi, dicta facere officia a necessitatibus eligendi cum voluptatum ipsum reiciendis corporis delectus possimus dolor deserunt aut similique, dolorum, porro nobis ut harum distinctio reprehenderit rem nihil! A, esse? Quo neque cum repudiandae quaerat maxime voluptate, veniam similique dignissimos sed autem, odit rerum delectus magni eius! Fuga cumque veritatis odit consectetur sapiente accusamus odio id inventore placeat tempora incidunt eum consequuntur aliquam dignissimos dicta, libero voluptatum. Nulla incidunt nemo praesentium, explicabo in eos consequuntur sit. Illum sint quae veritatis ad consequuntur est non facilis, tenetur iure ratione eius quaerat fugiat, reprehenderit reiciendis sequi inventore rem beatae ipsum porro doloribus excepturi placeat. At magnam possimus, rerum cupiditate consequatur enim corporis ex recusandae ipsam officia quia eos, quae repellendus temporibus accusamus nisi mollitia fugit dolore odit officiis. Inventore repudiandae alias quibusdam quod tenetur dolore illo odit ut maxime cum. Fugit numquam ipsam voluptatibus, quae facere, sed deleniti consequatur ipsum inventore, minus illum? Quaerat omnis quae similique fuga aliquid, odit ex, id suscipit, quisquam quidem perferendis. Autem eligendi distinctio, explicabo perferendis vero suscipit, quaerat quis nostrum illum natus ipsum repudiandae dolor voluptatibus sunt doloribus officiis facilis delectus!`,
+    
+
+    <main style=" padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+            <p>Arrays are the backbone of many algorithms and data structures in computer science. Their ability to store elements in contiguous memory locations allows quick access and manipulation of data. This blog delves into the essentials of arrays, ensuring you understand their structure, operations, and significance.</p>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">What Are Arrays?</h2>
+            <p>Arrays are a linear data structure that stores elements of the same type in a contiguous block of memory. Each element is accessed using an index, starting from 0 in most programming languages. For example:</p>
+            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
+int arr[5] = {10, 20, 30, 40, 50};
+</pre>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+                <li><strong>Indexing:</strong> Access elements using indices like <code>arr[0]</code> for the first element.</li>
+                <li><strong>Fixed Size:</strong> In static arrays, the size is defined at the time of declaration.</li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Why Are Arrays Important?</h2>
+            <ol style="margin-left: 20px;">
+                <li><strong>Efficient Data Access:</strong> Direct access to elements via indices.</li>
+                <li><strong>Foundation for Algorithms:</strong> Used in sorting, searching, and dynamic programming.</li>
+                <li><strong>Versatility:</strong> Applicable in nearly every field, from gaming to database management.</li>
+            </ol>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Key Operations</h2>
+            <h3 style="color: #333;">1. Traversal</h3>
+            <p>Visit each element to perform operations like printing or summing values:</p>
+            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
+arr = [10, 20, 30, 40, 50]
+for element in arr:
+    print(element)
+</pre>
+
+            <h3 style="color: #333;">2. Insertion</h3>
+            <p>Add an element at a specific position (in dynamic arrays):</p>
+            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
+let arr = [1, 2, 4, 5];
+arr.splice(2, 0, 3); // Insert 3 at index 2
+console.log(arr); // [1, 2, 3, 4, 5]
+</pre>
+
+            <h3 style="color: #333;">3. Deletion</h3>
+            <p>Remove an element, which may require shifting:</p>
+            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
+let arr = [1, 2, 3, 4, 5];
+arr.splice(2, 1); // Remove element at index 2
+console.log(arr); // [1, 2, 4, 5]
+</pre>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Common Use Cases</h2>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+                <li><strong>Data Storage:</strong> Store and retrieve large datasets.</li>
+                <li><strong>Matrix Operations:</strong> Representing 2D or 3D data like images and graphs.</li>
+                <li><strong>Algorithm Inputs:</strong> Provide input for algorithms like sorting and searching.</li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 20px;">
+            <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Challenges with Arrays</h2>
+            <ul style="list-style-type: disc; margin-left: 20px;">
+                <li><strong>Fixed Size:</strong> Static arrays can’t grow dynamically.</li>
+                <li><strong>Inefficient Insert/Delete:</strong> These operations may require shifting elements.</li>
+                <li><strong>Memory Allocation:</strong> Contiguous allocation may lead to memory issues in large arrays.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+            <p>Arrays are a simple yet powerful data structure that forms the foundation of problem-solving in programming. Mastering arrays will pave the way for understanding more complex data structures like linked lists, stacks, and trees.</p>
+        </section>
+    </main>
+           `,
     featured: true,
     author: "Muzzamil Bukhari",
     category: "ARRAY",

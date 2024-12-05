@@ -1,12 +1,14 @@
 import { BlogPageComp } from "@/components";
 
-const BlogPage = async ({ params }: { params: Promise<{ slug: string }> }) => {
-  const slug = (await params).slug;
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ blog_name: string }>;
+}) {
+  const slug = (await params).blog_name;
   return (
     <>
-      <BlogPageComp slug={slug} />;
+      <BlogPageComp slug={slug} />
     </>
   );
-};
-
-export default BlogPage;
+}
