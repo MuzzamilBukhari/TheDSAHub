@@ -38,7 +38,11 @@ const Navbar = () => {
                 </button>
 
                 {hoveredDropdown === item.id && (
-                  <div className="absolute top-10 -left-7 bg-black text-gray-300 shadow-md rounded-lg p-4 space-y-2 w-56 max-w-xs">
+                  <div
+                    className="absolute top-7 -left-7 bg-black text-gray-300 shadow-md rounded-lg p-4 space-y-2 w-56 max-w-xs"
+                    onMouseEnter={() => setHoveredDropdown(item.id)}
+                    onMouseLeave={() => setHoveredDropdown(null)}
+                  >
                     {categories.map((category) => (
                       <Link key={category.id} href={category.slug}>
                         <button className="block text-left hover:text-primary w-full text-lg py-2 px-2 rounded-md hover:bg-black/80">

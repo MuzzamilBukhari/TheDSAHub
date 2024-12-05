@@ -122,7 +122,7 @@ console.log(arr); // [1, 2, 4, 5]
   {
     id: 3,
     title: "Sliding Window Approach: Optimize Your Array Solutions",
-    slug: "Sliding-Window Approach-Optimize-Your-Array-Solutions",
+    slug: "Sliding-Window-Approach-Optimize-Your-Array-Solutions",
     description:
       "Dive into the sliding window technique to solve problems like maximum subarray sums and dynamic window calculations with ease.",
     imgUrl: "/home-hero-bg.jpg",
@@ -248,7 +248,7 @@ console.log(arr); // [1, 2, 4, 5]
   {
     id: 12,
     title: "Balancing Trees: The Power of AVL ",
-    slug: "Balancing Trees: The Power of AVL ",
+    slug: "Balancing-Trees-The-Power-of-AVL ",
     description:
       "Discover self-balancing binary trees and why they are essential for maintaining efficiency in dynamic datasets.",
     imgUrl: "/home-hero-bg.jpg",
@@ -276,7 +276,7 @@ console.log(arr); // [1, 2, 4, 5]
   {
     id: 14,
     title: "Graph Algorithms: Prim's and Kruskal's MST",
-    slug: "Graph Algorithms: Prim's and Kruskal's MST",
+    slug: "Graph-Algorithms-Prim's-and-Kruskal's-MST",
     description:
       "Delves into two popular MST algorithms: Prim's Algorithm and Kruskal's Algorithm, breaking down their processes, implementations, and applications.",
     imgUrl: "/home-hero-bg.jpg",
@@ -304,7 +304,7 @@ console.log(arr); // [1, 2, 4, 5]
   {
     id: 16,
     title: "Sorting Basics: Bubble, Selection, and Insertion Sort",
-    slug: "Sorting Basics: Bubble, Selection, and Insertion Sort",
+    slug: "Sorting-Basics-Bubble-Selection-and-Insertion-Sort",
     description:
       "Get familiar with simple sorting techniques, their workings, and where they are most effective.",
     imgUrl: "/home-hero-bg.jpg",
@@ -318,7 +318,7 @@ console.log(arr); // [1, 2, 4, 5]
   {
     id: 17,
     title: "QuickSort and MergeSort: Divide and Conquer in Action",
-    slug: "QuickSort and MergeSort: Divide and Conquer in Action",
+    slug: "QuickSort-and-MergeSort-Divide-and-Conquer-in-Action",
     description:
       "Understand how QuickSort and MergeSort use the divide-and-conquer technique to achieve efficient sorting.",
     imgUrl: "/home-hero-bg.jpg",
