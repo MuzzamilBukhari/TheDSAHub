@@ -18,10 +18,10 @@ const BlogPageComp = ({ slug }: { slug: string }) => {
       <div className="max-w-4xl mx-auto p-6">
         <div className="mb-8">
           <Image
-            src={blog.imgUrl} // Ensure the imageUrl is a valid string
+            src={blog.imgUrl}
             alt={blog.title}
-            width={600} // Adjust width based on your design
-            height={288} // Adjust height based on your design
+            width={600}
+            height={288}
             className="w-full h-72 object-cover rounded-lg mb-6"
           />
           <h1 className="text-4xl font-bold mb-4">{blog.title}</h1>

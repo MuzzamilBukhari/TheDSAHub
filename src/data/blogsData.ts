@@ -22,16 +22,16 @@ const blogs: Blog[] = [
     content: `
     
 
-    <main style=" padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-        <section style="margin-bottom: 20px;">
+    <main style=" padding: 14px; border-radius: 8px;">
+        <section style="margin-bottom: 32px;">
             <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
             <p>Arrays are the backbone of many algorithms and data structures in computer science. Their ability to store elements in contiguous memory locations allows quick access and manipulation of data. This blog delves into the essentials of arrays, ensuring you understand their structure, operations, and significance.</p>
         </section>
 
-        <section style="margin-bottom: 20px;">
+        <section style="margin-bottom: 32px;">
             <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">What Are Arrays?</h2>
             <p>Arrays are a linear data structure that stores elements of the same type in a contiguous block of memory. Each element is accessed using an index, starting from 0 in most programming languages. For example:</p>
-            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
+            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; margin-top: 16px; margin-bottom:16px; border-radius: 5px; overflow-x: auto;">
 int arr[5] = {10, 20, 30, 40, 50};
 </pre>
             <ul style="list-style-type: disc; margin-left: 20px;">
@@ -40,7 +40,7 @@ int arr[5] = {10, 20, 30, 40, 50};
             </ul>
         </section>
 
-        <section style="margin-bottom: 20px;">
+        <section style="margin-bottom: 32px;">
             <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Why Are Arrays Important?</h2>
             <ol style="margin-left: 20px;">
                 <li><strong>Efficient Data Access:</strong> Direct access to elements via indices.</li>
@@ -51,25 +51,25 @@ int arr[5] = {10, 20, 30, 40, 50};
 
         <section style="margin-bottom: 20px;">
             <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Key Operations</h2>
-            <h3 style="color: #333;">1. Traversal</h3>
+            <h3 style="color: #808080;">1. Traversal</h3>
             <p>Visit each element to perform operations like printing or summing values:</p>
-            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
+            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; margin-top: 16px; margin-bottom:16px; border-radius: 5px; overflow-x: auto;">
 arr = [10, 20, 30, 40, 50]
 for element in arr:
     print(element)
 </pre>
 
-            <h3 style="color: #333;">2. Insertion</h3>
+            <h3 style="color: #808080;">2. Insertion</h3>
             <p>Add an element at a specific position (in dynamic arrays):</p>
-            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
+            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; margin-top: 16px; margin-bottom:16px; border-radius: 5px; overflow-x: auto;">
 let arr = [1, 2, 4, 5];
 arr.splice(2, 0, 3); // Insert 3 at index 2
 console.log(arr); // [1, 2, 3, 4, 5]
 </pre>
 
-            <h3 style="color: #333;">3. Deletion</h3>
+            <h3 style="color: #808080;">3. Deletion</h3>
             <p>Remove an element, which may require shifting:</p>
-            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
+            <pre style="background-color: black; border: 2px solid #ffa31a; padding: 10px; margin-top: 16px; margin-bottom:16px; border-radius: 5px; overflow-x: auto;">
 let arr = [1, 2, 3, 4, 5];
 arr.splice(2, 1); // Remove element at index 2
 console.log(arr); // [1, 2, 4, 5]
