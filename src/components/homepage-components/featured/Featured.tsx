@@ -22,6 +22,7 @@ const FeatureSection = () => {
               title={blog.title}
               desc={blog.description}
               slug={blog.slug}
+              imgUrl={blog.imgUrl}
             />
           ))}
         </div>

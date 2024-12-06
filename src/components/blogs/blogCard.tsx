@@ -7,18 +7,20 @@ const BlogCard = ({
   title,
   desc,
   slug,
+  imgUrl,
 }: {
   title: string;
   desc: string;
   slug: string;
+  imgUrl: string;
 }) => {
   return (
     <div className="p-4">
       <div className="h-full border-2 border-primary rounded-lg overflow-hidden">
         <Image
           className="lg:h-48 md:h-36 w-full object-cover object-center"
-          src="/images/bg.jpg"
-          alt="blog"
+          src={imgUrl}
+          alt={title}
           width={721}
           height={401}
         />

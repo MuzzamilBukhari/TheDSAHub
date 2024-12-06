@@ -19,18 +19,18 @@ const ExploreCard = ({
   btnLink: string;
 }) => {
   return (
-    <div className="p-4 ">
-      <div className="h-full bg-primary bg-opacity-90  px-8 pt-16 pb-24 rounded-2xl overflow-hidden text-center relative">
+    <div className="p-4  ">
+      <div className="h-full border-2 border-primary bg-opacity-90 ring-primary  px-8 pt-16 pb-24 rounded-3xl overflow-hidden text-center relative">
         <div className="h-[190px]  md:h-40">
-          <h2 className=" text-xs title-font font-medium text-gray-200 mb-1">
+          <h2 className=" text-xs title-font font-medium text-txtcolor mb-1">
             {category}
           </h2>
-          <h1 className="title-font sm:text-2xl text-xl font-medium text-white mb-3">
+          <h1 className="title-font sm:text-2xl text-xl font-semibold text-white mb-3">
             {title}
           </h1>
-          <p className="leading-relaxed mb-3">{desc}</p>
+          <p className="leading-relaxed mb-3 text-primary">{desc}</p>
         </div>
-        <Button type="button" className="border-2 border-gray-300">
+        <Button type="button" className="border-2 border-primary">
           <Link
             href={`/categories/${btnLink}`}
             className=" inline-flex items-center"

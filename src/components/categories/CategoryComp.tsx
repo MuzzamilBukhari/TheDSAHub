@@ -32,6 +32,7 @@ const CategoryComp = ({ slug }: { slug: string }) => {
               title={blog.title}
               desc={blog.description}
               slug={blog.slug}
+              imgUrl={blog.imgUrl}
             />
           ))}
         </div>

@@ -20,6 +20,7 @@ const BlogSection = () => {
               title={blog.title}
               slug={blog.slug}
               desc={blog.description}
+              imgUrl={blog.imgUrl}
             />
           ))}
         </div>
