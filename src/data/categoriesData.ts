@@ -1,3 +1,12 @@
+export type Category = {
+  id: number;
+  name: string;
+  slug: string;
+  title: string;
+  description: string;
+  btnText: string;
+};
+
 const categories = [
   {
     id: 1,
@@ -7,7 +16,6 @@ const categories = [
     description:
       "Start your DSA journey by mastering arrays and understanding their practical uses.",
     btnText: "Learn more",
-    blogIds: [1, 2, 3],
   },
   {
     id: 2,
@@ -22,7 +30,7 @@ const categories = [
   {
     id: 3,
     name: "STACK & QUEUES",
-    slug: "stack-&-queues",
+    slug: "stack-and-queues",
     title: "Manage Your Data",
     description:
       "Learn how to implement stacks and queues and their applications in problem-solving.",

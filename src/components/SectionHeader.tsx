@@ -12,7 +12,7 @@ const SectionHeader = ({
   return (
     <>
       <h1
-        className={`title-font text-white text-5xl sm:text-6xl md:text-7xl font-extrabold ${className}`}
+        className={`title-font text-white text-4xl sm:text-5xl md:text-6xl font-extrabold ${className}`}
       >
         {heading}
       </h1>
