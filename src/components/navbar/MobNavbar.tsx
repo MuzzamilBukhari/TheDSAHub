@@ -71,15 +71,19 @@ const MobNavbar = () => {
                 </button>
 
                 {isDropdownOpen && (
-                  <div className="absolute top-10 left-0 bg-black text-gray-300 shadow-md rounded-lg p-4 space-y-2 w-72 max-w-xs">
+                  <div className="absolute top-7 left-0 bg-black text-gray-300 shadow-md rounded-lg p-1 w-72 max-w-xs">
                     {categories.map((category) => (
-                      <button
+                      <NavLink
+                        slug={`/categories/${category.slug}`}
                         key={category.id}
-                        onClick={() => handleNavItemClick(category.slug)}
-                        className="block text-left text-white hover:text-primary  w-full text-lg py-2 px-3 rounded-md hover:bg-black/80 whitespace-nowrap"
                       >
-                        {category.name}
-                      </button>
+                        <button
+                          onClick={() => handleNavItemClick(category.slug)}
+                          className="block text-left text-white hover:text-primary  w-full text-lg px-3 rounded-md hover:bg-black/80 whitespace-nowrap"
+                        >
+                          {category.name}
+                        </button>
+                      </NavLink>
                     ))}
                   </div>
                 )}
@@ -88,7 +92,7 @@ const MobNavbar = () => {
               <NavLink
                 slug={item.slug}
                 key={item.id}
-                name={item.name}
+                children={item.name}
                 onclick={() => handleNavItemClick(item.slug)}
               />
             )
