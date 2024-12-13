@@ -14,9 +14,9 @@ const Input = ({
   type: string;
   id: string;
   name: string;
-  value: string;
-  onChange: (e: { target: { name: string; value: string } }) => void;
-  placeHolder: string;
+  value?: string;
+  onChange?: (e: { target: { name: string; value: string } }) => void;
+  placeHolder?: string;
   className?: string;
 }) => {
   return (
