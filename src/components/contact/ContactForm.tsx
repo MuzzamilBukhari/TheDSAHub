@@ -25,7 +25,7 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     // emailjs.sendForm("service_99t306t", "template_iojnbh5", formData, {publicKey: "73YB3ttjRcQpM-3_2"})
 

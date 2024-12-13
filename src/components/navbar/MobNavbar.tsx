@@ -6,7 +6,6 @@ import Image from "next/image";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import categories from "@/data/categoriesData";
 import navItems from "./navItems";
-import { useRouter } from "next/navigation";
 import { FaAngleRight } from "react-icons/fa6";
 
 const MobNavbar = () => {
@@ -19,11 +18,10 @@ const MobNavbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleNavItemClick = (slug: string) => {
+  const handleNavItemClick = () => {
     setIsOpen(false);
     setIsDropdownOpen(false);
     setIsArrowDown(false);
-    // router.push(slug);
   };
 
   const handleDropdownToggle = () => {
@@ -78,7 +76,7 @@ const MobNavbar = () => {
                         key={category.id}
                       >
                         <button
-                          onClick={() => handleNavItemClick(category.slug)}
+                          onClick={() => handleNavItemClick()}
                           className="block text-left text-white hover:text-primary w-full text-base sm:text-lg py-2 px-3 rounded-md hover:bg-black/80 whitespace-nowrap"
                         >
                           {category.name}
@@ -92,7 +90,7 @@ const MobNavbar = () => {
               <NavLink
                 slug={item.slug}
                 key={item.id}
-                onclick={() => handleNavItemClick(item.slug)}
+                onclick={() => handleNavItemClick()}
               >
                 {item.name}
               </NavLink>

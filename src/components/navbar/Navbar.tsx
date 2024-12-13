@@ -57,7 +57,9 @@ const Navbar = () => {
                 )}
               </div>
             ) : (
-              <NavLink key={item.id} slug={item.slug} children={item.name} />
+              <NavLink key={item.id} slug={item.slug}>
+                {item.name}
+              </NavLink>
             )
           )}
         </nav>
