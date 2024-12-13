@@ -92,9 +92,10 @@ const MobNavbar = () => {
               <NavLink
                 slug={item.slug}
                 key={item.id}
-                children={item.name}
                 onclick={() => handleNavItemClick(item.slug)}
-              />
+              >
+                {item.name}
+              </NavLink>
             )
           )}
         </div>
