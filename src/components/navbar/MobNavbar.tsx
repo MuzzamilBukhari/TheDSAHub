@@ -13,7 +13,7 @@ const MobNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isArrowDown, setIsArrowDown] = useState(false);
-  const router = useRouter();
+  // const router = useRouter();
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -23,7 +23,7 @@ const MobNavbar = () => {
     setIsOpen(false);
     setIsDropdownOpen(false);
     setIsArrowDown(false);
-    router.push(slug);
+    // router.push(slug);
   };
 
   const handleDropdownToggle = () => {
@@ -71,7 +71,7 @@ const MobNavbar = () => {
                 </button>
 
                 {isDropdownOpen && (
-                  <div className="absolute top-7 left-0 bg-black text-gray-300 shadow-md rounded-lg p-1 w-72 max-w-xs">
+                  <div className="absolute top-10 left-0 bg-black text-gray-300 shadow-md rounded-lg p-4 space-y-2 w-64 max-w-xs sm:w-72 sm:max-w-sm md:w-80 md:max-w-md max-h-48 overflow-y-auto">
                     {categories.map((category) => (
                       <NavLink
                         slug={`/categories/${category.slug}`}
@@ -79,7 +79,7 @@ const MobNavbar = () => {
                       >
                         <button
                           onClick={() => handleNavItemClick(category.slug)}
-                          className="block text-left text-white hover:text-primary  w-full text-lg px-3 rounded-md hover:bg-black/80 whitespace-nowrap"
+                          className="block text-left text-white hover:text-primary w-full text-base sm:text-lg py-2 px-3 rounded-md hover:bg-black/80 whitespace-nowrap"
                         >
                           {category.name}
                         </button>

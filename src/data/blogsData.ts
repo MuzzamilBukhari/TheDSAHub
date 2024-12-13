@@ -834,28 +834,31 @@ class CircularQueue:
     category: "STACK & QUEUES",
     categorySlug: "stack-and-queues",
   },
-  /*  {
+  {
     id: 8,
     title: "Implementing Stack and Queue with Linked Lists",
     slug: "Implementing-Stack-and-Queue-with-Linked-Lists",
     description:
       "Explore how stacks and queues can be implemented using linked lists for dynamic sizing.",
-    imgUrl: "/home-hero-bg.jpg",
+    imgUrl: "/blog/blog8.webp",
     content: `
-        Blog 9: Implementing Stacks and Queues Using Linked Lists
-Introduction
-Linked lists are a versatile data structure, enabling dynamic memory allocation and flexible operations. They can effectively implement stacks and queues. This blog explores how linked lists provide the backbone for these two fundamental data structures.
+       <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p style="color: white;">Linked lists are a versatile data structure, enabling dynamic memory allocation and flexible operations. They can effectively implement stacks and queues. This blog explores how linked lists provide the backbone for these two fundamental data structures.</p>
+    </section>
 
-Implementing a Stack Using Linked List
-In a stack, the topmost node holds the most recent element added. A linked list can efficiently represent a stack by inserting and removing elements at the head.
-
-Operations
-Push: Insert an element at the head of the list.
-Pop: Remove the head element.
-Peek: Return the value of the head element without removal.
-Code Implementation (Python)
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Implementing a Stack Using Linked List</h2>
+        <p style="color: white;">In a stack, the topmost node holds the most recent element added. A linked list can efficiently represent a stack by inserting and removing elements at the head.</p>
+        <h3 style="color: #808080;">Operations</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Push:</strong> Insert an element at the head of the list.</li>
+            <li><strong>Pop:</strong> Remove the head element.</li>
+            <li><strong>Peek:</strong> Return the value of the head element without removal.</li>
+        </ul>
+        <h3 style="color: #808080;">Code Implementation (Python)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 class Node:
     def __init__(self, data):
         self.data = data
@@ -881,26 +884,29 @@ class Stack:
         if not self.top:
             return "Stack is empty"
         return self.top.data
-Advantages
-Efficient insertion and deletion operations (
-𝑂
-(
-1
-)
-O(1)).
-Dynamic size adjustment without wasted memory.
-Implementing a Queue Using Linked List
-A queue with linked lists has two pointers:
+        </pre>
+        <h3 style="color: #808080;">Advantages</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>Efficient insertion and deletion operations (<strong>O(1)</strong>).</li>
+            <li>Dynamic size adjustment without wasted memory.</li>
+        </ul>
+    </section>
 
-Front: Points to the first element.
-Rear: Points to the last element.
-Operations
-Enqueue: Insert an element at the rear.
-Dequeue: Remove an element from the front.
-Peek: Return the value at the front without removal.
-Code Implementation (JavaScript)
-javascript
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Implementing a Queue Using Linked List</h2>
+        <p style="color: white;">A queue with linked lists has two pointers:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Front:</strong> Points to the first element.</li>
+            <li><strong>Rear:</strong> Points to the last element.</li>
+        </ul>
+        <h3 style="color: #808080;">Operations</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Enqueue:</strong> Insert an element at the rear.</li>
+            <li><strong>Dequeue:</strong> Remove an element from the front.</li>
+            <li><strong>Peek:</strong> Return the value at the front without removal.</li>
+        </ul>
+        <h3 style="color: #808080;">Code Implementation (JavaScript)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 class Node {
     constructor(value) {
         this.value = value;
@@ -936,23 +942,45 @@ class Queue {
         return this.front ? this.front.value : "Queue is empty";
     }
 }
-Advantages
-No fixed size constraint as in arrays.
-Efficient memory utilization.
-Applications of Stack and Queue with Linked Lists
-Stack:
+        </pre>
+        <h3 style="color: #808080;">Advantages</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>No fixed size constraint as in arrays.</li>
+            <li>Efficient memory utilization.</li>
+        </ul>
+    </section>
 
-Undo/Redo functionality in editors.
-Backtracking problems like solving mazes or puzzles.
-Queue:
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Applications of Stack and Queue with Linked Lists</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Stack:</strong>
+                <ul style="list-style-type: circle; margin-left: 20px;">
+                    <li>Undo/Redo functionality in editors.</li>
+                    <li>Backtracking problems like solving mazes or puzzles.</li>
+                </ul>
+            </li>
+            <li><strong>Queue:</strong>
+                <ul style="list-style-type: circle; margin-left: 20px;">
+                    <li>Task scheduling systems like Round-Robin CPU scheduling.</li>
+                    <li>Breadth-First Search (BFS) in graphs.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 
-Task scheduling systems like Round-Robin CPU scheduling.
-Breadth-First Search (BFS) in graphs.
-Challenges and Debugging Tips
-Ensure proper management of the next pointer to avoid memory leaks or unintended data overwrites.
-Test edge cases such as single-node stacks/queues or operations on empty structures.
-Conclusion
-By combining stacks and queues with linked lists, you achieve robust and efficient implementations. These structures form the building blocks for solving many complex problems, making them a must-know for developers.
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Challenges and Debugging Tips</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>Ensure proper management of the <strong>next</strong> pointer to avoid memory leaks or unintended data overwrites.</li>
+            <li>Test edge cases such as single-node stacks/queues or operations on empty structures.</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p style="color: white;">By combining stacks and queues with linked lists, you achieve robust and efficient implementations. These structures form the building blocks for solving many complex problems, making them a must-know for developers.</p>
+    </section>
+</main>
 
 
 `,
@@ -961,52 +989,54 @@ By combining stacks and queues with linked lists, you achieve robust and efficie
     category: "STACK & QUEUES",
     categorySlug: "stack-and-queues",
   },
+
   {
     id: 9,
     title: "Real-World Applications of Stacks and Queues",
     slug: "Real-World-Applications-of-Stacks-and-Queues",
     description:
       "dive into how these structures are used in practical scenarios, solving everyday computational challenges.",
-    imgUrl: "/home-hero-bg.jpg",
+    imgUrl: "/blog/blog9.webp",
     content: `
-        Blog 10: Real-World Applications of Stacks and Queues
-Introduction
-Stacks and queues are more than theoretical data structures; they power many real-world applications. This blog will dive into how these structures are used in practical scenarios, solving everyday computational challenges.
+    
+   <main style="background-color: #121212; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto; font-family: Arial, sans-serif; color: #e0e0e0;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p>Stacks and queues are not just theoretical concepts; they power many real-world applications, solving everyday computational challenges efficiently. This blog explores their practical uses in detail.</p>
+    </section>
 
-Applications of Stacks
-Undo/Redo Functionality
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Applications of Stacks</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+            <li><strong>Undo/Redo Functionality:</strong> Text editors and coding IDEs use stacks to handle operation sequences, enabling "undo" by popping the last action and "redo" by pushing it back.</li>
+            <li><strong>Syntax Parsing:</strong> Compilers utilize stacks to ensure balanced parentheses and process nested structures like XML/HTML tags or mathematical expressions.</li>
+            <li><strong>Function Call Management:</strong> The call stack in programming manages function calls, storing local variables and return addresses, especially for recursion.</li>
+            <li><strong>Backtracking Algorithms:</strong> Solving puzzles, mazes, or games like the Knight's Tour often relies on stacks for exploring paths and backtracking when needed.</li>
+        </ul>
+    </section>
 
-Example: In text editors like Microsoft Word or coding IDEs, stacks are used to store the sequence of operations. The "undo" operation pops the last action from the stack, while "redo" pushes it back.
-Syntax Parsing
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Applications of Queues</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+            <li><strong>Task Scheduling:</strong> Operating systems leverage queues for CPU task management, especially in round-robin scheduling.</li>
+            <li><strong>Breadth-First Search (BFS):</strong> BFS algorithms in graph and tree traversal utilize queues to explore nodes level by level.</li>
+            <li><strong>Print Queue Management:</strong> Printers use queues to ensure jobs are processed in the order they are received (FIFO).</li>
+            <li><strong>Data Packet Management in Networking:</strong> Routers use queues to manage data packets efficiently, prioritizing based on network conditions.</li>
+        </ul>
+    </section>
 
-Example: Compilers use stacks to check for balanced parentheses and process nested structures like expressions or XML/HTML tags.
-Function Call Management
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">How They Work Together</h2>
+        <p>Stacks and queues often complement each other in algorithm design:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+            <li><strong>Algorithm Design:</strong> A stack can be implemented using two queues and vice versa, showcasing their versatility.</li>
+            <li><strong>Web Browser:</strong> Browsers use stacks for "back" functionality and queues for managing tab sequences.</li>
+        </ul>
+    </section>
 
-Example: The call stack manages function calls in programming languages, storing local variables and return addresses for recursive functions.
-Backtracking Algorithms
-
-Example: Solving mazes, puzzles, or games (like the Knight's Tour in chess) often relies on stacks for backtracking.
-Applications of Queues
-Task Scheduling
-
-Example: Operating systems use queues for managing CPU tasks in round-robin scheduling.
-Breadth-First Search (BFS)
-
-Example: BFS in graphs and trees uses queues to explore nodes level by level, making it crucial for shortest path problems.
-Print Queue Management
-
-Example: Printers manage jobs using queues to ensure the first job added is printed first.
-Data Packet Management in Networking
-
-Example: Routers use queues to manage data packets efficiently, handling delays and prioritization.
-How They Work Together
-In some scenarios, stacks and queues complement each other:
-
-Algorithm Design: For example, you can implement one data structure using the other. A stack can be implemented using two queues and vice versa.
-Web Browser: The "back" button is a stack, while tabs opened in sequence may form a queue.
-Code Example: Balancing Parentheses Using a Stack
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Code Example: Balancing Parentheses Using a Stack</h2>
+        <pre style="background-color: #1e1e1e; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: #ffffff; font-family: 'Courier New', Courier, monospace; line-height: 1.6;">
 def is_balanced(expression):
     stack = []
     for char in expression:
@@ -1025,11 +1055,22 @@ def is_balanced(expression):
 # Example Usage
 print(is_balanced("{[()]}"))  # Output: True
 print(is_balanced("{[(])}"))  # Output: False
-Challenges and Considerations
-Performance: While stacks and queues are efficient for many operations, memory allocation in linked list-based implementations can introduce overhead.
-Scalability: Dynamic resizing of array-based stacks or queues must be handled carefully to ensure optimal performance.
-Conclusion
-From compilers to networking systems, stacks and queues are foundational tools that enable complex operations. Mastering these data structures prepares you to design efficient, real-world solutions.
+        </pre>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Challenges and Considerations</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; line-height: 1.8;">
+            <li><strong>Performance:</strong> Stacks and queues are efficient, but memory overhead in linked list-based implementations can impact performance.</li>
+            <li><strong>Scalability:</strong> Dynamic resizing of array-based implementations needs careful management for optimal resource use.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p>From compilers to network systems, stacks and queues are indispensable tools for managing data efficiently. Mastery of these structures equips you to tackle complex computational problems with confidence.</p>
+    </section>
+</main>
 
 
 `,
@@ -1038,115 +1079,30 @@ From compilers to networking systems, stacks and queues are foundational tools t
     category: "STACK & QUEUES",
     categorySlug: "stack-and-queues",
   },
+  /*
   {
     id: 10,
     title: "Binary Trees Simplified: Traversals and Applications",
     slug: "Binary-Trees-Simplified-Traversals-and-Applications",
     description:
       "Learn the basics of binary trees, including in-order, pre-order, and post-order traversals, with real-world use cases.",
-    imgUrl: "/home-hero-bg.jpg",
+    imgUrl: "/blog/blog10.webp",
     content: `
-         Blog 11: Binary Trees Simplified
-Introduction
-Binary trees are a foundational concept in computer science and programming. With each node having at most two children, binary trees provide an intuitive way to represent hierarchical data. This blog will break down the basics of binary trees, their structure, and why they’re essential.
-
-What is a Binary Tree?
-A binary tree is a tree data structure in which each node has at most two children:
-
-Left child
-Right child
-Key Terminology
-Root: The topmost node of the tree.
-Leaf: A node with no children.
-Parent and Child: A parent node points to its children.
-Subtree: A tree formed by a node and its descendants.
-Height of a Tree: The length of the longest path from the root to a leaf.
-Types of Binary Trees
-Full Binary Tree
-
-Every node has either 0 or 2 children.
-Example: A decision tree.
-Complete Binary Tree
-
-All levels are fully filled except possibly the last, which is filled from left to right.
-Example: Binary heaps.
-Perfect Binary Tree
-
-All interior nodes have two children, and all leaves are at the same level.
-Example: Idealized trees in mathematical problems.
-Binary Search Tree (BST)
-
-A binary tree where the left child contains values less than the parent, and the right child contains values greater.
-Example: Data lookups and storage.
-Basic Operations in a Binary Tree
-Insertion: Add a node in the tree while maintaining its structure.
-Traversal: Visit nodes in a specific order.
-Inorder (Left, Root, Right): Yields sorted data in BST.
-Preorder (Root, Left, Right): Used for copying trees.
-Postorder (Left, Right, Root): Useful in evaluating expressions.
-Example: Inorder Traversal (Python)
-python
-Copy code
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-
-def inorder_traversal(node):
-    if node:
-        inorder_traversal(node.left)
-        print(node.value, end=" ")
-        inorder_traversal(node.right)
-
-# Create a sample tree
-root = Node(10)
-root.left = Node(5)
-root.right = Node(15)
-root.left.left = Node(3)
-root.left.right = Node(7)
-
-# Output: 3 5 7 10 15
-inorder_traversal(root)
-Applications of Binary Trees
-Hierarchical Data Representation
-
-File systems (folders and subfolders).
-Search Optimization
-
-Binary Search Trees (BSTs) reduce search complexity to 
-𝑂
-(
-log
-⁡
-𝑛
-)
-O(logn).
-Expression Evaluation
-
-Abstract syntax trees in compilers represent arithmetic expressions.
-Data Compression
-
-Huffman coding uses binary trees for efficient encoding.
-Challenges
-Balancing trees (e.g., AVL trees or Red-Black trees) to maintain efficiency.
-Managing large datasets in memory-constrained environments.
-Conclusion
-Binary trees simplify complex problems by offering an organized, hierarchical structure. Their applications in search, storage, and compression make them indispensable for programmers and engineers alike.
-
+         
 `,
     featured: false,
     author: "Muzzamil Bukhari",
     category: "TREES",
     categorySlug: "trees",
   },
+  
   {
     id: 11,
     title: "Binary Search Trees: Searching and Insertion Made Easy",
     slug: "Binary-Search-Trees-Searching-and-Insertion-Made-Easy",
     description:
       "Understand the properties of binary search trees and how they optimize searching and sorting operations.",
-    imgUrl: "/home-hero-bg.jpg",
+    imgUrl: "/blog/blog11.webp",
     content: `
            Blog 14: Binary Search Trees: A Deeper Dive
 Introduction
@@ -1293,7 +1249,7 @@ Binary Search Trees offer a robust and efficient way to store and manage data. U
     slug: "Balancing-Trees-The-Power-of-AVL ",
     description:
       "Discover self-balancing binary trees and why they are essential for maintaining efficiency in dynamic datasets.",
-    imgUrl: "/home-hero-bg.jpg",
+   imgUrl: "/blog/blog12.webp",
     content: `
             Blog 15: Balancing Trees: The Power of AVL
 Introduction
@@ -1477,7 +1433,7 @@ AVL Trees are an excellent choice for applications requiring frequent insertions
     slug: "Graphs-101-Representation-and-Traversal-Techniques",
     description:
       "Explore adjacency lists and matrices, and learn graph traversal methods like BFS and DFS with practical examples.",
-    imgUrl: "/home-hero-bg.jpg",
+    imgUrl: "/blog/blog13.webp",
     content: `
             Blog 16: Graphs 101: Representation and Traversal Techniques
 Introduction
@@ -1627,7 +1583,7 @@ Would you like to move to the next topic: Graph Algorithms: Prim's and Kruskal's
     slug: "Graph-Algorithms-Prim's-and-Kruskal's-MST",
     description:
       "Delves into two popular MST algorithms: Prim's Algorithm and Kruskal's Algorithm, breaking down their processes, implementations, and applications.",
-    imgUrl: "/home-hero-bg.jpg",
+   imgUrl: "/blog/blog14.webp",
     content: `
     Blog 17: Graph Algorithms: Prim's and Kruskal's MST
 Introduction
@@ -1769,7 +1725,7 @@ Prim's and Kruskal's algorithms provide two efficient approaches to constructing
     slug: "Detecting-Cycles-in-Graphs-Using-DFS",
     description:
       "Master techniques for detecting cycles in directed and undirected graphs with hands-on examples.",
-    imgUrl: "/home-hero-bg.jpg",
+    imgUrl: "/blog/blog15.webp",
     content: `
           Blog 19: Detecting Cycles in Graphs: Using DFS
 Introduction
@@ -1906,7 +1862,7 @@ Detecting cycles is critical for various graph-based applications. DFS offers a 
     slug: "Sorting-Basics-Bubble-Selection-and-Insertion-Sort",
     description:
       "Get familiar with simple sorting techniques, their workings, and where they are most effective.",
-    imgUrl: "/home-hero-bg.jpg",
+   imgUrl: "/blog/blog16.webp",
     content: `
         Blog 20: Sorting Basics: Bubble, Selection, and Insertion Sort
 Introduction
@@ -2103,7 +2059,7 @@ While these algorithms may not be the most efficient for large datasets, they ar
     slug: "QuickSort-and-MergeSort-Divide-and-Conquer-in-Action",
     description:
       "Understand how QuickSort and MergeSort use the divide-and-conquer technique to achieve efficient sorting.",
-    imgUrl: "/home-hero-bg.jpg",
+   imgUrl: "/blog/blog17.webp",
     content: `
     Blog 21: QuickSort and MergeSort: Divide and Conquer in Action
 Introduction
