@@ -25,7 +25,6 @@ const categories = [
     description:
       "Explore how linked lists work and solve problems efficiently with pointers.",
     btnText: "Explore topic",
-    blogIds: [1, 2, 3],
   },
   {
     id: 3,
@@ -35,7 +34,6 @@ const categories = [
     description:
       "Learn how to implement stacks and queues and their applications in problem-solving.",
     btnText: "Dive in",
-    blogIds: [1, 2, 3],
   },
   {
     id: 4,
@@ -45,7 +43,6 @@ const categories = [
     description:
       "Understand tree structures, traversal methods, and their use cases.",
     btnText: "Explore more",
-    blogIds: [1, 2, 3],
   },
   {
     id: 5,
@@ -55,7 +52,6 @@ const categories = [
     description:
       "Decode graphs, algorithms, and their role in complex problem-solving.",
     btnText: "Learn Graphs",
-    blogIds: [1, 2, 3],
   },
   {
     id: 6,
@@ -65,7 +61,6 @@ const categories = [
     description:
       "Master sorting techniques like quicksort, mergesort, and more.",
     btnText: "Start learning",
-    blogIds: [1, 2, 3],
   },
 ];
 

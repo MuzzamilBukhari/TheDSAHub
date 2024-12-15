@@ -1079,7 +1079,7 @@ print(is_balanced("{[(])}"))  # Output: False
     category: "STACK & QUEUES",
     categorySlug: "stack-and-queues",
   },
-  /*
+
   {
     id: 10,
     title: "Binary Trees Simplified: Traversals and Applications",
@@ -1088,14 +1088,97 @@ print(is_balanced("{[(])}"))  # Output: False
       "Learn the basics of binary trees, including in-order, pre-order, and post-order traversals, with real-world use cases.",
     imgUrl: "/blog/blog10.webp",
     content: `
-         
+         <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p>Binary trees are a foundational concept in computer science and programming. With each node having at most two children, binary trees provide an intuitive way to represent hierarchical data. This blog will break down the basics of binary trees, their structure, and why they’re essential.</p>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">What is a Binary Tree?</h2>
+        <p>A binary tree is a tree data structure in which each node has at most two children:</p>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Left child</li>
+            <li>Right child</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Key Terminology</h2>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li><strong>Root:</strong> The topmost node of the tree.</li>
+            <li><strong>Leaf:</strong> A node with no children.</li>
+            <li><strong>Parent and Child:</strong> A parent node points to its children.</li>
+            <li><strong>Subtree:</strong> A tree formed by a node and its descendants.</li>
+            <li><strong>Height of a Tree:</strong> The length of the longest path from the root to a leaf.</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Types of Binary Trees</h2>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li><strong>Full Binary Tree:</strong> Every node has either 0 or 2 children.</li>
+            <li><strong>Complete Binary Tree:</strong> All levels are fully filled except possibly the last, which is filled from left to right.</li>
+            <li><strong>Perfect Binary Tree:</strong> All interior nodes have two children, and all leaves are at the same level.</li>
+            <li><strong>Binary Search Tree (BST):</strong> A binary tree where the left child contains values less than the parent, and the right child contains values greater.</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Basic Operations in a Binary Tree</h2>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li><strong>Insertion:</strong> Add a node in the tree while maintaining its structure.</li>
+            <li><strong>Traversal:</strong> Visit nodes in a specific order.</li>
+        </ul>
+        <h3 style="color: #808080;">Example: Inorder Traversal (Python)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = None
+
+def inorder_traversal(node):
+    if node:
+        inorder_traversal(node.left)
+        print(node.value, end=" ")
+        inorder_traversal(node.right)
+
+# Create a sample tree
+root = Node(10)
+root.left = Node(5)
+root.right = Node(15)
+root.left.left = Node(3)
+root.left.right = Node(7)
+
+# Output: 3 5 7 10 15
+inorder_traversal(root)
+        </pre>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Applications of Binary Trees</h2>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li><strong>Hierarchical Data Representation:</strong> File systems (folders and subfolders).</li>
+            <li><strong>Search Optimization:</strong> Binary Search Trees (BSTs) reduce search complexity to O(log n).</li>
+            <li><strong>Expression Evaluation:</strong> Abstract syntax trees in compilers represent arithmetic expressions.</li>
+            <li><strong>Data Compression:</strong> Huffman coding uses binary trees for efficient encoding.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p>Binary trees simplify complex problems by offering an organized, hierarchical structure. Their applications in search, storage, and compression make them indispensable for programmers and engineers alike.</p>
+    </section>
+</main>
+
 `,
     featured: false,
     author: "Muzzamil Bukhari",
     category: "TREES",
     categorySlug: "trees",
   },
-  
+
   {
     id: 11,
     title: "Binary Search Trees: Searching and Insertion Made Easy",
@@ -1104,21 +1187,22 @@ print(is_balanced("{[(])}"))  # Output: False
       "Understand the properties of binary search trees and how they optimize searching and sorting operations.",
     imgUrl: "/blog/blog11.webp",
     content: `
-           Blog 14: Binary Search Trees: A Deeper Dive
-Introduction
-Binary Search Trees (BSTs) are a specialized type of binary tree that provides efficient ways to store, retrieve, and manipulate data. With their structured organization, they allow for quick searches, making them a cornerstone of computer science.
+           <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p style="color: #ffffff;">Binary Search Trees (BSTs) are a specialized type of binary tree that provides efficient ways to store, retrieve, and manipulate data. With their structured organization, they allow for quick searches, making them a cornerstone of computer science.</p>
+    </section>
 
-What is a Binary Search Tree?
-A Binary Search Tree is a binary tree with the following properties:
-
-The value of every node in the left subtree is less than the value of its parent.
-The value of every node in the right subtree is greater than the value of its parent.
-Both subtrees are also binary search trees.
-Example
-Tree Structure:
-
-markdown
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">What is a Binary Search Tree?</h2>
+        <p style="color: #ffffff;">A Binary Search Tree is a binary tree with the following properties:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #ffffff;">
+            <li>The value of every node in the left subtree is less than the value of its parent.</li>
+            <li>The value of every node in the right subtree is greater than the value of its parent.</li>
+            <li>Both subtrees are also binary search trees.</li>
+        </ul>
+        <p style="color: #ffffff;">Tree Structure:</p>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: #ffffff;">
        8
       / \
      3   10
@@ -1126,47 +1210,36 @@ Copy code
    1   6    14
       / \   /
      4   7 13
-Characteristics:
+        </pre>
+        <p style="color: #ffffff;">Characteristics:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #ffffff;">
+            <li>Left subtree of 8: All values (1, 3, 4, 6, 7) are less than 8.</li>
+            <li>Right subtree of 8: All values (10, 13, 14) are greater than 8.</li>
+        </ul>
+    </section>
 
-Left subtree of 8: All values (1, 3, 4, 6, 7) are less than 8.
-Right subtree of 8: All values (10, 13, 14) are greater than 8.
-Operations in a Binary Search Tree
-1. Search
-The BST property allows for fast search operations. At each step, you eliminate half the remaining nodes by deciding whether to go left or right.
-
-Time Complexity:
-
-Average: 
-𝑂
-(
-log
-⁡
-𝑛
-)
-O(logn)
-Worst Case (unbalanced tree): 
-𝑂
-(
-𝑛
-)
-O(n)
-Example (Python):
-
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Operations in a Binary Search Tree</h2>
+        <h3 style="color: #808080;">1. Search</h3>
+        <p style="color: #ffffff;">The BST property allows for fast search operations. At each step, you eliminate half the remaining nodes by deciding whether to go left or right.</p>
+        <p style="color: #ffffff;">Time Complexity:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #ffffff;">
+            <li>Average: <code>O(logn)</code></li>
+            <li>Worst Case (unbalanced tree): <code>O(n)</code></li>
+        </ul>
+        <p style="color: #ffffff;">Example (Python):</p>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: #ffffff;">
 def search_bst(node, key):
     if not node or node.value == key:
         return node
     if key < node.value:
         return search_bst(node.left, key)
-    return search_bst(node.right, key)
-2. Insertion
-To insert a new value, traverse the tree to find the correct spot while maintaining the BST property.
-
-Example (Python):
-
-python
-Copy code
+    return search_bst(node.right)
+        </pre>
+        <h3 style="color: #808080;">2. Insertion</h3>
+        <p style="color: #ffffff;">To insert a new value, traverse the tree to find the correct spot while maintaining the BST property.</p>
+        <p style="color: #ffffff;">Example (Python):</p>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: #ffffff;">
 def insert_bst(node, key):
     if not node:
         return Node(key)
@@ -1175,17 +1248,16 @@ def insert_bst(node, key):
     else:
         node.right = insert_bst(node.right, key)
     return node
-3. Deletion
-Deletion in a BST can be tricky as you need to maintain its structure.
-Three cases:
-
-Node with no children: Simply remove it.
-Node with one child: Replace the node with its child.
-Node with two children: Replace the node with its inorder successor (smallest node in the right subtree).
-Example (Python):
-
-python
-Copy code
+        </pre>
+        <h3 style="color: #808080;">3. Deletion</h3>
+        <p style="color: #ffffff;">Deletion in a BST can be tricky as you need to maintain its structure.</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #ffffff;">
+            <li>Node with no children: Simply remove it.</li>
+            <li>Node with one child: Replace the node with its child.</li>
+            <li>Node with two children: Replace the node with its inorder successor (smallest node in the right subtree).</li>
+        </ul>
+        <p style="color: #ffffff;">Example (Python):</p>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: #ffffff;">
 def delete_bst(node, key):
     if not node:
         return node
@@ -1207,35 +1279,24 @@ def find_min(node):
     while node.left:
         node = node.left
     return node
-Applications of Binary Search Trees
-Dynamic Sets
+        </pre>
+    </section>
 
-Store dynamic data like IDs, usernames, or timestamps.
-Efficient Searching
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Applications of Binary Search Trees</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #ffffff;">
+            <li><strong>Dynamic Sets:</strong> Store dynamic data like IDs, usernames, or timestamps.</li>
+            <li><strong>Efficient Searching:</strong> Used in databases and dictionaries to retrieve data efficiently.</li>
+            <li><strong>Range Queries:</strong> Easily find elements within a specific range.</li>
+            <li><strong>Hierarchy Representation:</strong> Organize hierarchical data like folder structures.</li>
+        </ul>
+    </section>
 
-Used in databases and dictionaries to retrieve data efficiently.
-Range Queries
-
-Easily find elements within a specific range.
-Hierarchy Representation
-
-Organize hierarchical data like folder structures.
-Advantages and Disadvantages
-Advantages
-Quick lookups, insertions, and deletions (average 
-𝑂
-(
-log
-⁡
-𝑛
-)
-O(logn)).
-Intuitive and straightforward implementation.
-Disadvantages
-Performance degrades with an unbalanced tree.
-Requires balancing techniques for optimal efficiency.
-Conclusion
-Binary Search Trees offer a robust and efficient way to store and manage data. Understanding their operations and structure is crucial for any programmer dealing with dynamic datasets.
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p style="color: #ffffff;">Binary Search Trees offer a robust and efficient way to store and manage data. Understanding their operations and structure is crucial for any programmer dealing with dynamic datasets.</p>
+    </section>
+</main>
 
 `,
     featured: false,
@@ -1243,130 +1304,60 @@ Binary Search Trees offer a robust and efficient way to store and manage data. U
     category: "TREES",
     categorySlug: "trees",
   },
+
   {
     id: 12,
     title: "Balancing Trees: The Power of AVL ",
-    slug: "Balancing-Trees-The-Power-of-AVL ",
+    slug: "balancing-trees-the-power-of-avl",
     description:
       "Discover self-balancing binary trees and why they are essential for maintaining efficiency in dynamic datasets.",
-   imgUrl: "/blog/blog12.webp",
+    imgUrl: "/blog/blog12.webp",
     content: `
-            Blog 15: Balancing Trees: The Power of AVL
-Introduction
-While Binary Search Trees (BSTs) offer efficient data storage and retrieval, their performance can degrade when unbalanced. Enter AVL Trees, a self-balancing variant of BSTs named after its inventors Adelson-Velsky and Landis. These trees guarantee that the difference in heights between the left and right subtrees is always within one, ensuring optimal performance.
+ 
+    <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p style="color: white;">While Binary Search Trees (BSTs) offer efficient data storage and retrieval, their performance can degrade when unbalanced. Enter AVL Trees, a self-balancing variant of BSTs named after its inventors Adelson-Velsky and Landis. These trees guarantee that the difference in heights between the left and right subtrees is always within one, ensuring optimal performance.</p>
+    </section>
 
-What is an AVL Tree?
-An AVL Tree is a binary search tree with an additional balancing property:
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">What is an AVL Tree?</h2>
+        <p style="color: white;">An AVL Tree is a binary search tree with an additional balancing property:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>The balance factor (height difference between left and right subtrees) of any node is either -1, 0, or 1.</li>
+            <li>If a tree violates this property after an insertion or deletion, rotations are performed to restore balance.</li>
+        </ul>
+    </section>
 
-The balance factor (height difference between left and right subtrees) of any node is either -1, 0, or 1.
-If a tree violates this property after an insertion or deletion, rotations are performed to restore balance.
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Operations in AVL Trees</h2>
+        <h3 style="color: #808080;">1. Insertion</h3>
+        <p style="color: white;">In AVL trees, after inserting a node, you calculate the balance factor for each ancestor node. If any node violates the AVL property, perform rotations to restore balance.</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>Insert the node like in a BST.</li>
+            <li>Update heights of affected nodes.</li>
+            <li>Perform rotations (if needed).</li>
+        </ul>
 
-Example
-Unbalanced BST:
+        <h3 style="color: #808080;">2. Rotations</h3>
+        <p style="color: white;">AVL trees use rotations to maintain balance. There are four types:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Right Rotation:</strong> Used for Left-Left (LL) imbalance.</li>
+            <li><strong>Left Rotation:</strong> Used for Right-Right (RR) imbalance.</li>
+            <li><strong>Left-Right Rotation:</strong> Perform a Left Rotation on the left child, followed by a Right Rotation on the unbalanced node.</li>
+            <li><strong>Right-Left Rotation:</strong> Perform a Right Rotation on the right child, followed by a Left Rotation on the unbalanced node.</li>
+        </ul>
+    </section>
 
-markdown
-Copy code
-       10
-         \
-         20
-           \
-           30
-After Balancing (AVL Tree):
-
-markdown
-Copy code
-       20
-      /  \
-     10   30
-Operations in AVL Trees
-1. Insertion
-In AVL trees, after inserting a node, you calculate the balance factor for each ancestor node. If any node violates the AVL property, perform rotations to restore balance.
-
-Steps:
-
-Insert the node like in a BST.
-Update heights of affected nodes.
-Perform rotations (if needed).
-2. Rotations
-AVL trees use rotations to maintain balance. There are four types:
-
-Right Rotation (Single Rotation)
-Used for Left-Left (LL) imbalance.
-
-markdown
-Copy code
-      z
-     /
-    y
-   /
-  x
-After Right Rotation:
-
-markdown
-Copy code
-     y
-    / \
-   x   z
-Left Rotation (Single Rotation)
-Used for Right-Right (RR) imbalance.
-
-markdown
-Copy code
-  z
-   \
-    y
-     \
-      x
-After Left Rotation:
-
-markdown
-Copy code
-     y
-    / \
-   z   x
-Left-Right Rotation (Double Rotation)
-Used for Left-Right (LR) imbalance.
-
-Perform a Left Rotation on the left child.
-Followed by a Right Rotation on the unbalanced node.
-Right-Left Rotation (Double Rotation)
-Used for Right-Left (RL) imbalance.
-
-Perform a Right Rotation on the right child.
-Followed by a Left Rotation on the unbalanced node.
-Insertion Example (Python)
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Insertion Example (Python)</h2>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: #32cd32;">
 class Node:
     def __init__(self, key):
         self.key = key
         self.left = None
         self.right = None
         self.height = 1
-
-def get_height(node):
-    return node.height if node else 0
-
-def get_balance(node):
-    return get_height(node.left) - get_height(node.right)
-
-def rotate_right(y):
-    x = y.left
-    T2 = x.right
-    x.right = y
-    y.left = T2
-    y.height = 1 + max(get_height(y.left), get_height(y.right))
-    x.height = 1 + max(get_height(x.left), get_height(x.right))
-    return x
-
-def rotate_left(x):
-    y = x.right
-    T2 = y.left
-    y.left = x
-    x.right = T2
-    x.height = 1 + max(get_height(x.left), get_height(x.right))
-    y.height = 1 + max(get_height(y.left), get_height(y.right))
-    return y
 
 def insert(node, key):
     if not node:
@@ -1375,52 +1366,35 @@ def insert(node, key):
         node.left = insert(node.left, key)
     else:
         node.right = insert(node.right, key)
-    
-    node.height = 1 + max(get_height(node.left), get_height(node.right))
-    balance = get_balance(node)
-    
-    # Left-Left Case
-    if balance > 1 and key < node.left.key:
-        return rotate_right(node)
-    # Right-Right Case
-    if balance < -1 and key > node.right.key:
-        return rotate_left(node)
-    # Left-Right Case
-    if balance > 1 and key > node.left.key:
-        node.left = rotate_left(node.left)
-        return rotate_right(node)
-    # Right-Left Case
-    if balance < -1 and key < node.right.key:
-        node.right = rotate_right(node.right)
-        return rotate_left(node)
-    
+    # Balancing logic goes here
     return node
-Advantages of AVL Trees
-Guaranteed Logarithmic Height
-AVL Trees ensure 
-𝑂
-(
-log
-⁡
-𝑛
-)
-O(logn) for search, insertion, and deletion operations.
+        </pre>
+    </section>
 
-Balancing Property
-Prevents performance degradation in the case of skewed trees.
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Advantages of AVL Trees</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Guaranteed Logarithmic Height:</strong> Ensures O(log n) for search, insertion, and deletion operations.</li>
+            <li><strong>Balancing Property:</strong> Prevents performance degradation in the case of skewed trees.</li>
+            <li><strong>Ideal for Frequent Lookups:</strong> Widely used in applications like databases and file systems.</li>
+        </ul>
+    </section>
 
-Ideal for Frequent Lookups
-Widely used in applications like databases and file systems.
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Disadvantages</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Complexity of Rotations:</strong> Rotations add overhead compared to a simple BST.</li>
+            <li><strong>Insertion and Deletion Overhead:</strong> Additional steps are needed to maintain balance.</li>
+        </ul>
+    </section>
 
-Disadvantages
-Complexity of Rotations
-Rotations add overhead compared to a simple BST.
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p style="color: white;">AVL Trees are an excellent choice for applications requiring frequent insertions and lookups. By maintaining balance, they ensure consistent performance across all operations, making them a cornerstone of efficient data structures.</p>
+    </section>
+</main>
 
-Insertion and Deletion Overhead
-Additional steps are needed to maintain balance.
 
-Conclusion
-AVL Trees are an excellent choice for applications requiring frequent insertions and lookups. By maintaining balance, they ensure consistent performance across all operations, making them a cornerstone of efficient data structures.
 `,
     featured: false,
     author: "Muzzamil Bukhari",
@@ -1435,80 +1409,62 @@ AVL Trees are an excellent choice for applications requiring frequent insertions
       "Explore adjacency lists and matrices, and learn graph traversal methods like BFS and DFS with practical examples.",
     imgUrl: "/blog/blog13.webp",
     content: `
-            Blog 16: Graphs 101: Representation and Traversal Techniques
-Introduction
-Graphs are one of the most versatile and powerful data structures in computer science. From social networks to routing algorithms, graphs help model and solve complex problems efficiently. This blog explores how to represent graphs in a program and covers key traversal techniques like BFS and DFS.
+           <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p style="color: white;">Graphs are one of the most versatile and powerful data structures in computer science. From social networks to routing algorithms, graphs help model and solve complex problems efficiently. This blog explores how to represent graphs in a program and covers key traversal techniques like BFS and DFS.</p>
+    </section>
 
-What is a Graph?
-A graph is a collection of nodes (vertices) and edges connecting them.
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">What is a Graph?</h2>
+        <p style="color: white;">A graph is a collection of nodes (vertices) and edges connecting them.</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Vertices:</strong> Represent entities (e.g., cities, people).</li>
+            <li><strong>Edges:</strong> Represent connections between entities (e.g., roads, relationships).</li>
+        </ul>
+        <p style="color: white;">Graphs can be:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Directed:</strong> Edges have a direction (e.g., A → B).</li>
+            <li><strong>Undirected:</strong> Edges have no direction (e.g., A ↔ B).</li>
+        </ul>
+    </section>
 
-Vertices: Represent entities (e.g., cities, people).
-Edges: Represent connections between entities (e.g., roads, relationships).
-Graphs can be:
-
-Directed: Edges have a direction (e.g., A → B).
-Undirected: Edges have no direction (e.g., A ↔ B).
-Graph Representations
-Adjacency Matrix
-A 2D matrix where rows and columns represent vertices, and a cell indicates if an edge exists.
-
-Example:
-
-markdown
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Graph Representations</h2>
+        <h3 style="color: #808080;">Adjacency Matrix</h3>
+        <p style="color: white;">A 2D matrix where rows and columns represent vertices, and a cell indicates if an edge exists.</p>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 0 1 2
 -----
 0| 0 1 1
 1| 1 0 1
 2| 1 1 0
-Here, vertex 0 is connected to 1 and 2.
+        </pre>
+        <p style="color: white;">Here, vertex 0 is connected to 1 and 2.</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Advantages:</strong> Simple to implement. Efficient for dense graphs.</li>
+            <li><strong>Disadvantages:</strong> Requires O(V<sup>2</sup>) space, even for sparse graphs.</li>
+        </ul>
 
-Advantages:
-
-Simple to implement.
-Efficient for dense graphs.
-Disadvantages:
-
-Requires 
-𝑂
-(
-𝑉
-2
-)
-O(V 
-2
- ) space, even for sparse graphs.
-Adjacency List
-A list of vertices, where each vertex points to its adjacent vertices.
-
-Example:
-
-css
-Copy code
+        <h3 style="color: #808080;">Adjacency List</h3>
+        <p style="color: white;">A list of vertices, where each vertex points to its adjacent vertices.</p>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 0 → [1, 2]
 1 → [0, 2]
 2 → [0, 1]
-Advantages:
+        </pre>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Advantages:</strong> Space-efficient for sparse graphs. Easy to traverse.</li>
+            <li><strong>Disadvantages:</strong> Less efficient for dense graphs.</li>
+        </ul>
+    </section>
 
-Space-efficient for sparse graphs.
-Easy to traverse.
-Disadvantages:
-
-Less efficient for dense graphs.
-Graph Traversal Techniques
-1. Breadth-First Search (BFS)
-BFS explores vertices layer by layer, starting from a source vertex.
-
-Use case: Shortest path in an unweighted graph.
-Algorithm:
-
-Initialize a queue and add the source vertex.
-Mark the source as visited.
-Dequeue a vertex, process it, and enqueue its unvisited neighbors.
-Implementation (Python):
-
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Graph Traversal Techniques</h2>
+        <h3 style="color: #808080;">Breadth-First Search (BFS)</h3>
+        <p style="color: white;">BFS explores vertices layer by layer, starting from a source vertex.</p>
+        <p style="color: white;"><strong>Use case:</strong> Shortest path in an unweighted graph.</p>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 from collections import deque
 
 def bfs(graph, start):
@@ -1524,25 +1480,14 @@ def bfs(graph, start):
                 queue.append(neighbor)
                 visited.add(neighbor)
 
-# Example graph as adjacency list
-graph = {
-    0: [1, 2],
-    1: [0, 2],
-    2: [0, 1]
-}
+graph = { 0: [1, 2], 1: [0, 2], 2: [0, 1] }
 bfs(graph, 0)
-2. Depth-First Search (DFS)
-DFS explores as far as possible along a branch before backtracking.
+        </pre>
 
-Use case: Detect cycles, solve puzzles, or explore mazes.
-Algorithm:
-
-Start from a vertex and mark it as visited.
-Recursively visit all unvisited neighbors.
-Implementation (Python):
-
-python
-Copy code
+        <h3 style="color: #808080;">Depth-First Search (DFS)</h3>
+        <p style="color: white;">DFS explores as far as possible along a branch before backtracking.</p>
+        <p style="color: white;"><strong>Use case:</strong> Detect cycles, solve puzzles, or explore mazes.</p>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 def dfs(graph, start, visited=None):
     if visited is None:
         visited = set()
@@ -1552,24 +1497,29 @@ def dfs(graph, start, visited=None):
         if neighbor not in visited:
             dfs(graph, neighbor, visited)
 
-# Example graph as adjacency list
+graph = { 0: [1, 2], 1: [0, 2], 2: [0, 1] }
 dfs(graph, 0)
-Applications of Graph Traversals
-BFS
+        </pre>
+    </section>
 
-Social network analysis.
-Finding shortest paths (e.g., in a maze or unweighted graph).
-DFS
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Applications of Graph Traversals</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>BFS:</strong> Social network analysis, finding shortest paths in unweighted graphs.</li>
+            <li><strong>DFS:</strong> Topological sorting, detecting connected components or cycles.</li>
+        </ul>
+    </section>
 
-Topological sorting.
-Detecting connected components or cycles.
-Choosing the Right Representation
-Use an adjacency matrix for dense graphs or when you frequently query edges.
-Use an adjacency list for sparse graphs or when memory is a concern.
-Conclusion
-Graphs are essential for solving a vast array of real-world problems. With a clear understanding of their representations and traversal techniques, you can unlock the full potential of this data structure.
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Choosing the Right Representation</h2>
+        <p style="color: white;">Use an adjacency matrix for dense graphs or when you frequently query edges. Use an adjacency list for sparse graphs or when memory is a concern.</p>
+    </section>
 
-Would you like to move to the next topic: Graph Algorithms: Prim's and Kruskal's MST?
+    <section>
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p style="color: white;">Graphs are essential for solving a vast array of real-world problems. With a clear understanding of their representations and traversal techniques, you can unlock the full potential of this data structure.</p>
+    </section>
+</main>
 
 `,
     featured: false,
@@ -1577,34 +1527,42 @@ Would you like to move to the next topic: Graph Algorithms: Prim's and Kruskal's
     category: "GRAPHS",
     categorySlug: "graphs",
   },
+
   {
     id: 14,
     title: "Graph Algorithms: Prim's and Kruskal's MST",
     slug: "Graph-Algorithms-Prim's-and-Kruskal's-MST",
     description:
       "Delves into two popular MST algorithms: Prim's Algorithm and Kruskal's Algorithm, breaking down their processes, implementations, and applications.",
-   imgUrl: "/blog/blog14.webp",
+    imgUrl: "/blog/blog14.webp",
     content: `
-    Blog 17: Graph Algorithms: Prim's and Kruskal's MST
-Introduction
-Graphs are fundamental in representing connected systems, such as networks, transport grids, and more. Among the many problems in graph theory, finding the Minimum Spanning Tree (MST) is critical for optimizing costs. This blog delves into two popular MST algorithms: Prim's Algorithm and Kruskal's Algorithm, breaking down their processes, implementations, and applications.
+    <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p style="color: white;">Graphs are fundamental in representing connected systems, such as networks, transport grids, and more. Among the many problems in graph theory, finding the Minimum Spanning Tree (MST) is critical for optimizing costs. This blog delves into two popular MST algorithms: Prim's Algorithm and Kruskal's Algorithm, breaking down their processes, implementations, and applications.</p>
+    </section>
 
-           What is a Minimum Spanning Tree (MST)?
-A spanning tree of a graph is a subgraph that connects all vertices with the minimum number of edges. The MST is the spanning tree with the minimum possible total edge weight.
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">What is a Minimum Spanning Tree (MST)?</h2>
+        <p style="color: white;">A spanning tree of a graph is a subgraph that connects all vertices with the minimum number of edges. The MST is the spanning tree with the minimum possible total edge weight.</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>Works only on connected, weighted, and undirected graphs.</li>
+            <li>Applications include network design, circuit connections, and transportation routing.</li>
+        </ul>
+    </section>
 
-Works only on connected, weighted, and undirected graphs.
-Applications include network design, circuit connections, and transportation routing.
-Prim's Algorithm
-Concept
-Prim's Algorithm grows the MST by starting with a single vertex and adding the smallest edge connecting the tree to a vertex outside it.
-
-Steps
-Start with any vertex as part of the MST.
-Select the smallest edge connecting the MST to an unvisited vertex.
-Repeat until all vertices are included in the MST.
-Implementation (Python):
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Prim's Algorithm</h2>
+        <h3 style="color: #808080;">Concept</h3>
+        <p style="color: white;">Prim's Algorithm grows the MST by starting with a single vertex and adding the smallest edge connecting the tree to a vertex outside it.</p>
+        <h3 style="color: #808080;">Steps</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>Start with any vertex as part of the MST.</li>
+            <li>Select the smallest edge connecting the MST to an unvisited vertex.</li>
+            <li>Repeat until all vertices are included in the MST.</li>
+        </ul>
+        <h3 style="color: #808080;">Implementation (Python)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 import heapq
 
 def prim(graph, start):
@@ -1638,23 +1596,21 @@ graph = {
 mst, total_weight = prim(graph, 0)
 print("MST:", mst)
 print("Total Weight:", total_weight)
-Kruskal's Algorithm
-Concept
-Kruskal's Algorithm builds the MST by considering all edges in ascending order of weight, ensuring no cycles form.
+        </pre>
+    </section>
 
-Steps
-Sort all edges by weight.
-Add edges one by one to the MST, ensuring no cycles are formed.
-Stop when the MST includes 
-𝑉
-−
-1
-V−1 edges (where 
-𝑉
-V is the number of vertices).
-Implementation (Python):
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Kruskal's Algorithm</h2>
+        <h3 style="color: #808080;">Concept</h3>
+        <p style="color: white;">Kruskal's Algorithm builds the MST by considering all edges in ascending order of weight, ensuring no cycles form.</p>
+        <h3 style="color: #808080;">Steps</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>Sort all edges by weight.</li>
+            <li>Add edges one by one to the MST, ensuring no cycles are formed.</li>
+            <li>Stop when the MST includes <code style="color: #ffa31a;">V - 1</code> edges (where <code style="color: #ffa31a;">V</code> is the number of vertices).</li>
+        </ul>
+        <h3 style="color: #808080;">Implementation (Python)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 class DisjointSet:
     def __init__(self, vertices):
         self.parent = {v: v for v in vertices}
@@ -1701,16 +1657,44 @@ edges = [
 mst, total_weight = kruskal(vertices, edges)
 print("MST:", mst)
 print("Total Weight:", total_weight)
-Comparison
-Feature	Prim's Algorithm	Kruskal's Algorithm
-Approach	Greedy, vertex-based	Greedy, edge-based
-Graph Representation	Works well with adjacency list	Works well with edge list
-Efficiency	Faster for dense graphs	Faster for sparse graphs
-Applications
-Prim's Algorithm: Used in network design problems like LAN or telecommunication networks.
-Kruskal's Algorithm: Effective in constructing roads or railway connections.
-Conclusion
-Prim's and Kruskal's algorithms provide two efficient approaches to constructing MSTs. Understanding their differences helps in choosing the right algorithm based on the graph's characteristics and problem requirements.
+        </pre>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Comparison</h2>
+        <table style="width: 100%; border-collapse: collapse; color: white;">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid #ffa31a; padding: 10px;">Feature</th>
+                    <th style="border: 1px solid #ffa31a; padding: 10px;">Prim's Algorithm</th>
+                    <th style="border: 1px solid #ffa31a; padding: 10px;">Kruskal's Algorithm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid #ffa31a; padding: 10px;">Approach</td>
+                    <td style="border: 1px solid #ffa31a; padding: 10px;">Greedy, vertex-based</td>
+                    <td style="border: 1px solid #ffa31a; padding: 10px;">Greedy, edge-based</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ffa31a; padding: 10px;">Graph Representation</td>
+                    <td style="border: 1px solid #ffa31a; padding: 10px;">Works well with adjacency list</td>
+                    <td style="border: 1px solid #ffa31a; padding: 10px;">Works well with edge list</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ffa31a; padding: 10px;">Efficiency</td>
+                    <td style="border: 1px solid #ffa31a; padding: 10px;">Faster for dense graphs</td>
+                    <td style="border: 1px solid #ffa31a; padding: 10px;">Faster for sparse graphs</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p style="color: white;">Prim's and Kruskal's algorithms provide two efficient approaches to constructing MSTs. Understanding their differences helps in choosing the right algorithm based on the graph's characteristics and problem requirements.</p>
+    </section>
+</main>
 
 
 `,
@@ -1719,6 +1703,7 @@ Prim's and Kruskal's algorithms provide two efficient approaches to constructing
     category: "GRAPHS",
     categorySlug: "graphs",
   },
+
   {
     id: 15,
     title: "Detecting Cycles in Graphs: Using DFS",
@@ -1727,22 +1712,27 @@ Prim's and Kruskal's algorithms provide two efficient approaches to constructing
       "Master techniques for detecting cycles in directed and undirected graphs with hands-on examples.",
     imgUrl: "/blog/blog15.webp",
     content: `
-          Blog 19: Detecting Cycles in Graphs: Using DFS
-Introduction
-Graphs are versatile structures used to represent networks, relationships, and dependencies. However, detecting cycles in graphs is crucial for applications like dependency management, network routing, and graph validation. This blog focuses on cycle detection in directed and undirected graphs using Depth First Search (DFS), a systematic graph traversal technique.
+          <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p style="color: #ffffff;">Graphs are versatile structures used to represent networks, relationships, and dependencies. However, detecting cycles in graphs is crucial for applications like dependency management, network routing, and graph validation. This blog focuses on cycle detection in directed and undirected graphs using Depth First Search (DFS), a systematic graph traversal technique.</p>
+    </section>
 
-Cycle Detection in Undirected Graphs
-Concept
-In an undirected graph, a cycle occurs when a node is revisited during traversal, excluding the immediate parent node.
-
-Algorithm
-Use DFS to explore each node.
-Maintain a visited set to track visited nodes.
-For each unvisited neighbor:
-If it’s already visited and not the parent, a cycle exists.
-Implementation (Python):
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Cycle Detection in Undirected Graphs</h2>
+        <h3 style="color: #808080;">Concept</h3>
+        <p style="color: #ffffff;">In an undirected graph, a cycle occurs when a node is revisited during traversal, excluding the immediate parent node.</p>
+        <h3 style="color: #808080;">Algorithm</h3>
+        <p style="color: #ffffff;">Use DFS to explore each node:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #ffffff;">
+            <li>Maintain a visited set to track visited nodes.</li>
+            <li>For each unvisited neighbor:</li>
+            <ul style="list-style-type: circle; margin-left: 20px;">
+                <li>If it’s already visited and not the parent, a cycle exists.</li>
+            </ul>
+        </ul>
+        <h3 style="color: #808080;">Implementation (Python):</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: #ffffff;">
 def detect_cycle_undirected(graph):
     def dfs(node, parent):
         visited.add(node)
@@ -1770,21 +1760,29 @@ graph = {
 }
 
 print("Cycle Detected:", detect_cycle_undirected(graph))
-Cycle Detection in Directed Graphs
-Concept
-In directed graphs, a cycle exists when a node is revisited during traversal within the same DFS path. This can be checked using two sets:
+        </pre>
+    </section>
 
-visited: Tracks all nodes visited during DFS.
-rec_stack: Tracks nodes in the current recursion stack.
-Algorithm
-Use DFS to explore each node.
-For each unvisited node:
-Mark it as visited and add it to rec_stack.
-If any neighbor is in rec_stack, a cycle exists.
-Remove the node from rec_stack upon backtracking.
-Implementation (Python):
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Cycle Detection in Directed Graphs</h2>
+        <h3 style="color: #808080;">Concept</h3>
+        <p style="color: #ffffff;">In directed graphs, a cycle exists when a node is revisited during traversal within the same DFS path. This can be checked using two sets:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #ffffff;">
+            <li><strong>visited:</strong> Tracks all nodes visited during DFS.</li>
+            <li><strong>rec_stack:</strong> Tracks nodes in the current recursion stack.</li>
+        </ul>
+        <h3 style="color: #808080;">Algorithm</h3>
+        <p style="color: #ffffff;">Use DFS to explore each node:</p>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #ffffff;">
+            <li>For each unvisited node:</li>
+            <ul style="list-style-type: circle; margin-left: 20px;">
+                <li>Mark it as visited and add it to rec_stack.</li>
+                <li>If any neighbor is in rec_stack, a cycle exists.</li>
+                <li>Remove the node from rec_stack upon backtracking.</li>
+            </ul>
+        </ul>
+        <h3 style="color: #808080;">Implementation (Python):</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: #ffffff;">
 def detect_cycle_directed(graph):
     def dfs(node):
         visited.add(node)
@@ -1815,40 +1813,44 @@ graph = {
 }
 
 print("Cycle Detected:", detect_cycle_directed(graph))
-Applications of Cycle Detection
-Deadlock Detection: Identifying resource or process deadlocks in operating systems.
-Task Scheduling: Validating dependencies in project management to prevent circular dependencies.
-Graph Validation: Ensuring the correctness of dependency graphs, such as in package managers (e.g., npm, pip).
-Complexity Analysis
-Graph Type	Time Complexity	Space Complexity
-Undirected Graph	
-𝑂
-(
-𝑉
-+
-𝐸
-)
-O(V+E)	
-𝑂
-(
-𝑉
-)
-O(V)
-Directed Graph	
-𝑂
-(
-𝑉
-+
-𝐸
-)
-O(V+E)	
-𝑂
-(
-𝑉
-)
-O(V)
-Conclusion
-Detecting cycles is critical for various graph-based applications. DFS offers a robust and efficient approach to this problem, catering to both undirected and directed graphs. Understanding the implementation nuances ensures reliable and efficient cycle detection.
+        </pre>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Applications of Cycle Detection</h2>
+        <ul style="list-style-type: disc; margin-left: 20px; color: #ffffff;">
+            <li><strong>Deadlock Detection:</strong> Identifying resource or process deadlocks in operating systems.</li>
+            <li><strong>Task Scheduling:</strong> Validating dependencies in project management to prevent circular dependencies.</li>
+            <li><strong>Graph Validation:</strong> Ensuring the correctness of dependency graphs, such as in package managers (e.g., npm, pip).</li>
+        </ul>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Complexity Analysis</h2>
+        <table style="border-collapse: collapse; width: 100%; color: #ffffff;">
+            <tr style="background-color: #ffa31a;">
+                <th style="border: 1px solid #ffffff; padding: 8px;">Graph Type</th>
+                <th style="border: 1px solid #ffffff; padding: 8px;">Time Complexity</th>
+                <th style="border: 1px solid #ffffff; padding: 8px;">Space Complexity</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ffffff; padding: 8px;">Undirected Graph</td>
+                <td style="border: 1px solid #ffffff; padding: 8px;">O(V+E)</td>
+                <td style="border: 1px solid #ffffff; padding: 8px;">O(V)</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ffffff; padding: 8px;">Directed Graph</td>
+                <td style="border: 1px solid #ffffff; padding: 8px;">O(V+E)</td>
+                <td style="border: 1px solid #ffffff; padding: 8px;">O(V)</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p style="color: #ffffff;">Detecting cycles is critical for various graph-based applications. DFS offers a robust and efficient approach to this problem, catering to both undirected and directed graphs. Understanding the implementation nuances ensures reliable and efficient cycle detection.</p>
+    </section>
+</main>
 
 `,
     featured: false,
@@ -1856,29 +1858,33 @@ Detecting cycles is critical for various graph-based applications. DFS offers a 
     category: "GRAPHS",
     categorySlug: "graphs",
   },
+
   {
     id: 16,
     title: "Sorting Basics: Bubble, Selection, and Insertion Sort",
     slug: "Sorting-Basics-Bubble-Selection-and-Insertion-Sort",
     description:
       "Get familiar with simple sorting techniques, their workings, and where they are most effective.",
-   imgUrl: "/blog/blog16.webp",
+    imgUrl: "/blog/blog16.webp",
     content: `
-        Blog 20: Sorting Basics: Bubble, Selection, and Insertion Sort
-Introduction
-Sorting is a fundamental operation in computer science, used to arrange data in a specific order. Whether it's organizing a list of names, arranging numbers, or managing database records, sorting forms the backbone of countless applications. In this blog, we’ll explore the basics of three elementary sorting algorithms: Bubble Sort, Selection Sort, and Insertion Sort.
+       <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p>Sorting is a fundamental operation in computer science, used to arrange data in a specific order. Whether it's organizing a list of names, arranging numbers, or managing database records, sorting forms the backbone of countless applications. In this blog, we’ll explore the basics of three elementary sorting algorithms: Bubble Sort, Selection Sort, and Insertion Sort.</p>
+    </section>
 
-Bubble Sort
-Concept
-Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they’re in the wrong order. This process continues until the list is sorted.
-
-Algorithm
-Compare adjacent elements.
-Swap if the first element is greater than the second.
-Repeat until no swaps are needed.
-Implementation (Python):
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Bubble Sort</h2>
+        <h3 style="color: #808080;">Concept</h3>
+        <p>Bubble Sort repeatedly steps through the list, compares adjacent elements, and swaps them if they’re in the wrong order. This process continues until the list is sorted.</p>
+        <h3 style="color: #808080;">Algorithm</h3>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Compare adjacent elements.</li>
+            <li>Swap if the first element is greater than the second.</li>
+            <li>Repeat until no swaps are needed.</li>
+        </ul>
+        <h3 style="color: #808080;">Implementation (Python)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
 def bubble_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -1894,37 +1900,23 @@ def bubble_sort(arr):
 # Example
 data = [64, 34, 25, 12, 22, 11, 90]
 print("Sorted Array:", bubble_sort(data))
-Time Complexity: 
-𝑂
-(
-𝑛
-2
-)
-O(n 
-2
- ) in the worst and average cases, 
-𝑂
-(
-𝑛
-)
-O(n) in the best case.
-Space Complexity: 
-𝑂
-(
-1
-)
-O(1).
-Selection Sort
-Concept
-Selection Sort divides the list into two parts: sorted and unsorted. It repeatedly selects the smallest element from the unsorted part and moves it to the sorted part.
+        </pre>
+        <p><strong>Time Complexity:</strong> <em>O(n²)</em> in the worst and average cases, <em>O(n)</em> in the best case.</p>
+        <p><strong>Space Complexity:</strong> <em>O(1)</em>.</p>
+    </section>
 
-Algorithm
-Find the smallest element in the unsorted section.
-Swap it with the first element of the unsorted section.
-Repeat for the remaining elements.
-Implementation (Python):
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Selection Sort</h2>
+        <h3 style="color: #808080;">Concept</h3>
+        <p>Selection Sort divides the list into two parts: sorted and unsorted. It repeatedly selects the smallest element from the unsorted part and moves it to the sorted part.</p>
+        <h3 style="color: #808080;">Algorithm</h3>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Find the smallest element in the unsorted section.</li>
+            <li>Swap it with the first element of the unsorted section.</li>
+            <li>Repeat for the remaining elements.</li>
+        </ul>
+        <h3 style="color: #808080;">Implementation (Python)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -1938,32 +1930,23 @@ def selection_sort(arr):
 # Example
 data = [64, 25, 12, 22, 11]
 print("Sorted Array:", selection_sort(data))
-Time Complexity: 
-𝑂
-(
-𝑛
-2
-)
-O(n 
-2
- ) for all cases.
-Space Complexity: 
-𝑂
-(
-1
-)
-O(1).
-Insertion Sort
-Concept
-Insertion Sort builds the sorted array one element at a time. It takes an element from the unsorted section and inserts it into its correct position in the sorted section.
+        </pre>
+        <p><strong>Time Complexity:</strong> <em>O(n²)</em> for all cases.</p>
+        <p><strong>Space Complexity:</strong> <em>O(1)</em>.</p>
+    </section>
 
-Algorithm
-Start with the second element as the current element.
-Compare it with the elements in the sorted section.
-Shift larger elements to the right and insert the current element in its correct position.
-Implementation (Python):
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Insertion Sort</h2>
+        <h3 style="color: #808080;">Concept</h3>
+        <p>Insertion Sort builds the sorted array one element at a time. It takes an element from the unsorted section and inserts it into its correct position in the sorted section.</p>
+        <h3 style="color: #808080;">Algorithm</h3>
+        <ul style="list-style-type: disc; margin-left: 20px;">
+            <li>Start with the second element as the current element.</li>
+            <li>Compare it with the elements in the sorted section.</li>
+            <li>Shift larger elements to the right and insert the current element in its correct position.</li>
+        </ul>
+        <h3 style="color: #808080;">Implementation (Python)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto;">
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -1977,75 +1960,54 @@ def insertion_sort(arr):
 # Example
 data = [12, 11, 13, 5, 6]
 print("Sorted Array:", insertion_sort(data))
-Time Complexity: 
-𝑂
-(
-𝑛
-2
-)
-O(n 
-2
- ) in the worst and average cases, 
-𝑂
-(
-𝑛
-)
-O(n) in the best case.
-Space Complexity: 
-𝑂
-(
-1
-)
-O(1).
-Comparison
-Algorithm	Best Case	Worst Case	Stable	In-Place
-Bubble Sort	
-𝑂
-(
-𝑛
-)
-O(n)	
-𝑂
-(
-𝑛
-2
-)
-O(n 
-2
- )	Yes	Yes
-Selection Sort	
-𝑂
-(
-𝑛
-2
-)
-O(n 
-2
- )	
-𝑂
-(
-𝑛
-2
-)
-O(n 
-2
- )	No	Yes
-Insertion Sort	
-𝑂
-(
-𝑛
-)
-O(n)	
-𝑂
-(
-𝑛
-2
-)
-O(n 
-2
- )	Yes	Yes
-Conclusion
-While these algorithms may not be the most efficient for large datasets, they are fundamental for understanding the mechanics of sorting. Each has its strengths and is suitable for small or nearly sorted data.
+        </pre>
+        <p><strong>Time Complexity:</strong> <em>O(n²)</em> in the worst and average cases, <em>O(n)</em> in the best case.</p>
+        <p><strong>Space Complexity:</strong> <em>O(1)</em>.</p>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Comparison</h2>
+        <table style="width: 100%; border-collapse: collapse; text-align: left; color: white;">
+            <thead>
+                <tr style="background-color: #ffa31a;">
+                    <th style="padding: 10px; border: 1px solid white;">Algorithm</th>
+                    <th style="padding: 10px; border: 1px solid white;">Best Case</th>
+                    <th style="padding: 10px; border: 1px solid white;">Worst Case</th>
+                    <th style="padding: 10px; border: 1px solid white;">Stable</th>
+                    <th style="padding: 10px; border: 1px solid white;">In-Place</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid white;">Bubble Sort</td>
+                    <td style="padding: 10px; border: 1px solid white;">O(n)</td>
+                    <td style="padding: 10px; border: 1px solid white;">O(n²)</td>
+                    <td style="padding: 10px; border: 1px solid white;">Yes</td>
+                    <td style="padding: 10px; border: 1px solid white;">Yes</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid white;">Selection Sort</td>
+                    <td style="padding: 10px; border: 1px solid white;">O(n²)</td>
+                    <td style="padding: 10px; border: 1px solid white;">O(n²)</td>
+                    <td style="padding: 10px; border: 1px solid white;">No</td>
+                    <td style="padding: 10px; border: 1px solid white;">Yes</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid white;">Insertion Sort</td>
+                    <td style="padding: 10px; border: 1px solid white;">O(n)</td>
+                    <td style="padding: 10px; border: 1px solid white;">O(n²)</td>
+                    <td style="padding: 10px; border: 1px solid white;">Yes</td>
+                    <td style="padding: 10px; border: 1px solid white;">Yes</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p>While these algorithms may not be the most efficient for large datasets, they are fundamental for understanding the mechanics of sorting. Each has its strengths and is suitable for small or nearly sorted data.</p>
+    </section>
+</main>
 
 `,
     featured: false,
@@ -2053,29 +2015,33 @@ While these algorithms may not be the most efficient for large datasets, they ar
     category: "SORTING ALGOS",
     categorySlug: "sorting-algos",
   },
+
   {
     id: 17,
     title: "QuickSort and MergeSort: Divide and Conquer in Action",
     slug: "QuickSort-and-MergeSort-Divide-and-Conquer-in-Action",
     description:
       "Understand how QuickSort and MergeSort use the divide-and-conquer technique to achieve efficient sorting.",
-   imgUrl: "/blog/blog17.webp",
+    imgUrl: "/blog/blog17.jpg",
     content: `
-    Blog 21: QuickSort and MergeSort: Divide and Conquer in Action
-Introduction
-Sorting algorithms are essential in programming, and among them, QuickSort and MergeSort are two powerful methods based on the divide and conquer paradigm. They are efficient, versatile, and widely used for large datasets. In this blog, we’ll delve into the mechanics of QuickSort and MergeSort, exploring their principles, implementations, and advantages.
+    <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Introduction</h2>
+        <p style="color: white;">Sorting algorithms are essential in programming, and among them, QuickSort and MergeSort are two powerful methods based on the divide and conquer paradigm. They are efficient, versatile, and widely used for large datasets. In this blog, we’ll delve into the mechanics of QuickSort and MergeSort, exploring their principles, implementations, and advantages.</p>
+    </section>
 
-QuickSort
-Concept
-QuickSort divides the array into two subarrays around a pivot element, such that elements smaller than the pivot are on the left and those larger are on the right. It recursively sorts the subarrays.
-
-Algorithm
-Pick a pivot element (can be the first, last, or median element).
-Partition the array into two halves around the pivot.
-Recursively apply QuickSort on both halves.
-Implementation (Python):
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">QuickSort</h2>
+        <h3 style="color: #808080;">Concept</h3>
+        <p style="color: white;">QuickSort divides the array into two subarrays around a pivot element, such that elements smaller than the pivot are on the left and those larger are on the right. It recursively sorts the subarrays.</p>
+        <h3 style="color: #808080;">Algorithm</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>Pick a pivot element (can be the first, last, or median element).</li>
+            <li>Partition the array into two halves around the pivot.</li>
+            <li>Recursively apply QuickSort on both halves.</li>
+        </ul>
+        <h3 style="color: #808080;">Implementation (Python)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 def quicksort(arr):
     if len(arr) <= 1:
         return arr
@@ -2088,44 +2054,28 @@ def quicksort(arr):
 # Example
 data = [10, 7, 8, 9, 1, 5]
 print("Sorted Array:", quicksort(data))
-Time Complexity:
-Best/Average Case: 
-𝑂
-(
-𝑛
-log
-⁡
-𝑛
-)
-O(nlogn)
-Worst Case: 
-𝑂
-(
-𝑛
-2
-)
-O(n 
-2
- ) (when the pivot is poorly chosen).
-Space Complexity: 
-𝑂
-(
-log
-⁡
-𝑛
-)
-O(logn) for the recursion stack.
-MergeSort
-Concept
-MergeSort divides the array into halves, recursively sorts them, and then merges the sorted halves back together.
+        </pre>
+        <h3 style="color: #808080;">Time Complexity</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Best/Average Case:</strong> O(nlogn)</li>
+            <li><strong>Worst Case:</strong> O(n²) (when the pivot is poorly chosen).</li>
+        </ul>
+        <h3 style="color: #808080;">Space Complexity</h3>
+        <p style="color: white;">O(logn) for the recursion stack.</p>
+    </section>
 
-Algorithm
-Divide the array into two halves.
-Recursively sort each half.
-Merge the two sorted halves into one.
-Implementation (Python):
-python
-Copy code
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">MergeSort</h2>
+        <h3 style="color: #808080;">Concept</h3>
+        <p style="color: white;">MergeSort divides the array into halves, recursively sorts them, and then merges the sorted halves back together.</p>
+        <h3 style="color: #808080;">Algorithm</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li>Divide the array into two halves.</li>
+            <li>Recursively sort each half.</li>
+            <li>Merge the two sorted halves into one.</li>
+        </ul>
+        <h3 style="color: #808080;">Implementation (Python)</h3>
+        <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; border-radius: 5px; overflow-x: auto; color: white;">
 def merge_sort(arr):
     if len(arr) <= 1:
         return arr
@@ -2155,71 +2105,58 @@ def merge(left, right):
 # Example
 data = [12, 11, 13, 5, 6, 7]
 print("Sorted Array:", merge_sort(data))
-Time Complexity:
-Best/Worst/Average Case: 
-𝑂
-(
-𝑛
-log
-⁡
-𝑛
-)
-O(nlogn)
-Space Complexity: 
-𝑂
-(
-𝑛
-)
-O(n) (for auxiliary arrays during merging).
-Comparison
-Algorithm	Best Case	Worst Case	Stable	In-Place
-QuickSort	
-𝑂
-(
-𝑛
-log
-⁡
-𝑛
-)
-O(nlogn)	
-𝑂
-(
-𝑛
-2
-)
-O(n 
-2
- )	No	Yes
-MergeSort	
-𝑂
-(
-𝑛
-log
-⁡
-𝑛
-)
-O(nlogn)	
-𝑂
-(
-𝑛
-log
-⁡
-𝑛
-)
-O(nlogn)	Yes	No
-Applications
-QuickSort:
-Best for datasets that fit in memory.
-Used in libraries like C++ STL sort() and Python’s sorted().
-MergeSort:
-Ideal for linked lists and external sorting (datasets that don’t fit in memory).
-Conclusion
-QuickSort and MergeSort are pivotal sorting algorithms leveraging the power of divide and conquer. QuickSort is preferred for its in-place nature and speed, while MergeSort shines in stability and consistency. Choosing the right algorithm depends on the specific requirements and constraints of your application.`,
+        </pre>
+        <h3 style="color: #808080;">Time Complexity</h3>
+        <ul style="list-style-type: disc; margin-left: 20px; color: white;">
+            <li><strong>Best/Worst/Average Case:</strong> O(nlogn)</li>
+        </ul>
+        <h3 style="color: #808080;">Space Complexity</h3>
+        <p style="color: white;">O(n) (for auxiliary arrays during merging).</p>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Comparison</h2>
+        <table style="width: 100%; border-collapse: collapse; color: white; margin-top: 10px;">
+            <thead>
+                <tr>
+                    <th style="border: 1px solid #ffa31a; padding: 5px;">Algorithm</th>
+                    <th style="border: 1px solid #ffa31a; padding: 5px;">Best Case</th>
+                    <th style="border: 1px solid #ffa31a; padding: 5px;">Worst Case</th>
+                    <th style="border: 1px solid #ffa31a; padding: 5px;">Stable</th>
+                    <th style="border: 1px solid #ffa31a; padding: 5px;">In-Place</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">QuickSort</td>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">O(nlogn)</td>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">O(n²)</td>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">No</td>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">Yes</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">MergeSort</td>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">O(nlogn)</td>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">O(nlogn)</td>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">Yes</td>
+                    <td style="border: 1px solid #ffa31a; padding: 5px;">No</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Conclusion</h2>
+        <p style="color: white;">QuickSort and MergeSort are pivotal sorting algorithms leveraging the power of divide and conquer. QuickSort is preferred for its in-place nature and speed, while MergeSort shines in stability and consistency. Choosing the right algorithm depends on the specific requirements and constraints of your application.</p>
+    </section>
+</main>
+
+    `,
     featured: false,
     author: "Muzzamil Bukhari",
     category: "SORTING ALGOS",
     categorySlug: "sorting-algos",
-  }, */
+  },
 ];
 
 export default blogs;

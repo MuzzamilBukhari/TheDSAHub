@@ -12,7 +12,7 @@ type Comment = {
 };
 
 const BlogPageComp = ({ slug }: { slug: string }) => {
-  const [blog, setBlog] = useState<Blog | undefined>(undefined);
+  const [blog, setBlog] = useState<Blog | undefined>();
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
   const [comments, setComments] = useState<Comment[]>([
@@ -30,6 +30,7 @@ const BlogPageComp = ({ slug }: { slug: string }) => {
 
   useEffect(() => {
     setBlog(blogs.find((blog) => blog.slug === slug));
+    console.log(blog);
   }, [slug]);
 
   return blog ? (
