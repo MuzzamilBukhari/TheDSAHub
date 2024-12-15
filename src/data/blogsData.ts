@@ -31,9 +31,8 @@ const blogs: Blog[] = [
         <section style="margin-bottom: 32px;">
             <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">What Are Arrays?</h2>
             <p>Arrays are a linear data structure that stores elements of the same type in a contiguous block of memory. Each element is accessed using an index, starting from 0 in most programming languages. For example:</p>
-            <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; margin-top: 16px; margin-bottom:16px; border-radius: 5px; overflow-x: auto;">
-int arr[5] = {10, 20, 30, 40, 50};
-</pre>
+         
+<img src="/blog/code1.png" alt="code" />
             <ul style="list-style-type: disc; margin-left: 20px;">
                 <li><strong>Indexing:</strong> Access elements using indices like <code>arr[0]</code> for the first element.</li>
                 <li><strong>Fixed Size:</strong> In static arrays, the size is defined at the time of declaration.</li>
@@ -53,27 +52,15 @@ int arr[5] = {10, 20, 30, 40, 50};
             <h2 style="color: #ffa31a; border-bottom: 2px solid #ffa31a; padding-bottom: 5px;">Key Operations</h2>
             <h3 style="color: #808080;">1. Traversal</h3>
             <p>Visit each element to perform operations like printing or summing values:</p>
-            <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; margin-top: 16px; margin-bottom:16px; border-radius: 5px; overflow-x: auto;">
-arr = [10, 20, 30, 40, 50]
-for element in arr:
-    print(element)
-</pre>
+           <img src="/blog/code2.png" alt="code" />
 
             <h3 style="color: #808080;">2. Insertion</h3>
             <p>Add an element at a specific position (in dynamic arrays):</p>
-            <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; margin-top: 16px; margin-bottom:16px; border-radius: 5px; overflow-x: auto;">
-let arr = [1, 2, 4, 5];
-arr.splice(2, 0, 3); // Insert 3 at index 2
-console.log(arr); // [1, 2, 3, 4, 5]
-</pre>
+           <img src="/blog/code3.png" alt="code" />
 
             <h3 style="color: #808080;">3. Deletion</h3>
             <p>Remove an element, which may require shifting:</p>
-            <pre style="background-color: #292929; border: 2px solid #ffa31a; padding: 10px; margin-top: 16px; margin-bottom:16px; border-radius: 5px; overflow-x: auto;">
-let arr = [1, 2, 3, 4, 5];
-arr.splice(2, 1); // Remove element at index 2
-console.log(arr); // [1, 2, 4, 5]
-</pre>
+            <img src="/blog/code4.png" alt="code" />
         </section>
 
         <section style="margin-bottom: 20px;">
