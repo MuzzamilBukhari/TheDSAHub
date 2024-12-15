@@ -15,17 +15,17 @@ const BlogCard = ({
   imgUrl: string;
 }) => {
   return (
-    <div className="p-4">
+    <div className=" p-4">
       <div className="h-full border-2 border-primary rounded-lg overflow-hidden">
         <Image
-          className="lg:h-48 md:h-36 w-full object-cover object-center"
+          className="w-full h-56 object-cover object-center"
           src={imgUrl}
           alt={title}
-          width={721}
-          height={401}
+          width={700}
+          height={300}
         />
         <div className="p-6 ">
-          <div className="h-[260px] sm:h-[192px]">
+          <div className="h-[210px] sm:h-[150px] md:h-[205px] lg:h-[230px] xl:h-[190px]">
             <h1 className="title-font text-lg font-semibold text-primary mb-3">
               {title}
             </h1>

@@ -13,7 +13,7 @@ const BlogSection = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-6 sm:px-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center">
           {blogs.map((blog) => (
             <BlogCard
               key={blog.id}

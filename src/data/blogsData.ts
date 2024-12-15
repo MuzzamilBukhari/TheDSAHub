@@ -1520,7 +1520,7 @@ dfs(graph, 0)
     title: "Graph Algorithms: Prim's and Kruskal's MST",
     slug: "Graph-Algorithms-Prim's-and-Kruskal's-MST",
     description:
-      "Delves into two popular MST algorithms: Prim's Algorithm and Kruskal's Algorithm, breaking down their processes, implementations, and applications.",
+      "Delves into two popular MST algorithms: Prim's and Kruskal's Algorithm, breaking down their processes, implementations, and applications.",
     imgUrl: "/blog/blog14.webp",
     content: `
     <main style="background-color: black; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 20px;">
