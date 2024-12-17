@@ -4,7 +4,7 @@ import { IconType } from "react-icons";
 const SocialLink = ({
   link,
   icon: Icon,
-  size = 30,
+  size = 26,
 }: {
   link: string;
   icon: IconType;

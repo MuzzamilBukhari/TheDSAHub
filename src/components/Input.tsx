@@ -21,7 +21,9 @@ const Input = ({
 }) => {
   return (
     <>
-      <label className="leading-7 text-sm">{label}</label>
+      <label htmlFor={name} className="leading-7 text-sm">
+        {label}
+      </label>
       <input
         type={type}
         id={id}
