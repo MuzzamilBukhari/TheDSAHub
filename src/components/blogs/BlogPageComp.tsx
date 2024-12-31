@@ -35,7 +35,7 @@ const BlogPageComp = ({ slug }: { slug: string }) => {
 
   return blog ? (
     <section>
-      <div className="max-w-4xl mx-auto p-6">
+      <div className="max-w-4xl mx-auto p-6 pt-28">
         <div className="mb-8">
           <Image
             src={blog.imgUrl}

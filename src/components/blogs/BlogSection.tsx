@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import { SectionHeader, BlogCard } from "../";
 import blogs from "@/data/blogsData";
+import { useBlogs } from "@/context/BlogContext";
 
 const BlogSection = () => {
+  // const { blogsData } = useBlogs();
   return (
     <section className="text-gray-300 body-font bg-black/90">
       <div className="container px-5 py-20 mx-auto ">
@@ -14,7 +18,7 @@ const BlogSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center">
-          {blogs.map((blog) => (
+          {blogs?.map((blog) => (
             <BlogCard
               key={blog.id}
               title={blog.title}

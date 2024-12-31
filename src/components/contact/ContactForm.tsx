@@ -27,25 +27,17 @@ const ContactForm = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    // emailjs.sendForm("service_99t306t", "template_iojnbh5", formData, {publicKey: "73YB3ttjRcQpM-3_2"})
 
     emailjs
       .send(
-        "service_99t306t", // service id
-        "template_iojnbh5", // template id
+        "service_azza153", // service id
+        "template_aruccdl", // template id
         formData,
-        "73YB3ttjRcQpM-3_2" // public key
+        "0s8ArAPN-jdSAWRCI" // public key
       )
-      .then(
-        (response) => {
-          setMessage("Email sent successfully");
-          console.log("SUCCESS!", response.status, response.text);
-        },
-        (error) => {
-          setMessage("Email not sent!");
-          console.log("FAILED...", error);
-        }
-      );
+      .then(() => setMessage("Email sent successfully..."))
+      .catch(() => setMessage("Email not send!"))
+      .finally(() => setFormData({ name: "", email: "", message: "" }));
   };
 
   return (
