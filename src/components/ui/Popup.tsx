@@ -28,7 +28,7 @@ const Popup = ({ children }: { children: ReactNode }) => {
 
   return (
     <div className="flex items-center justify-center h-screen p-6 bg-black">
-      <div className="flex flex-col items-center justify-center space-y-8 mt-4 sm:mt-7 bg-black shadow-[0_0_20px_rgba(255,255,255,0.5)] rounded-lg max-w-4xl w-full min-h-[600px]">
+      <div className="flex flex-col items-center justify-center space-y-8 mt-4 px-4 md:px-0 sm:mt-7 bg-black shadow-[0_0_20px_rgba(255,255,255,0.5)] rounded-lg max-w-4xl w-full min-h-[600px]">
         <div>
           <Image src="/logo.jpg" alt="Logo" width={200} height={200} />
         </div>
@@ -41,16 +41,16 @@ const Popup = ({ children }: { children: ReactNode }) => {
           advanced coding techniques, we’ve got you covered. Join a community of
           passionate learners and take your DSA journey to the next level.
         </p>
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
           <button
             onClick={handleContinue}
-            className="px-16 py-3 font-bold text-black bg-[#ff9000] rounded-lg hover:bg-[#ff7f00]"
+            className=" px-12 py-4 font-bold text-black bg-[#ff9000] rounded-lg hover:bg-[#ff7f00]"
           >
             Start Exploring - Enter{" "}
           </button>
           <button
             onClick={handleExit}
-            className="px-16 py-3 font-bold text-white bg-bg1 rounded-lg hover:bg-bg2"
+            className=" px-12 py-4 font-bold text-white bg-bg1 rounded-lg hover:bg-bg2"
           >
             Not Interested - Exit
           </button>
