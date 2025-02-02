@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NavLink from "./NavLink";
-import Button from "../Button";
+import Button from "../ui/Button";
 import { FaAngleRight } from "react-icons/fa6";
 import navItems from "./navItems";
 import categories from "@/data/categoriesData";

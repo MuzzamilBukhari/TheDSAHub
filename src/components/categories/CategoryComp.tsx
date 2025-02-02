@@ -2,7 +2,7 @@
 import blogs, { Blog } from "@/data/blogsData";
 import React, { useEffect, useState } from "react";
 import BlogCard from "../blogs/blogCard";
-import SectionHeader from "../SectionHeader";
+import SectionHeader from "../ui/SectionHeader";
 import categories, { Category } from "@/data/categoriesData";
 
 const CategoryComp = ({ slug }: { slug: string }) => {
