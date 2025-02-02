@@ -3,7 +3,6 @@
 import React from "react";
 import { SectionHeader, BlogCard } from "../";
 import blogs from "@/data/blogsData";
-import { useBlogs } from "@/context/BlogContext";
 
 const BlogSection = () => {
   // const { blogsData } = useBlogs();
