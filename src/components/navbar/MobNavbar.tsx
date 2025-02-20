@@ -12,7 +12,6 @@ const MobNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isArrowDown, setIsArrowDown] = useState(false);
-  // const router = useRouter();
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);

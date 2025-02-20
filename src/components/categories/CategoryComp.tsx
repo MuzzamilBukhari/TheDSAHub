@@ -1,7 +1,7 @@
 "use client";
 import blogs, { Blog } from "@/data/blogsData";
 import React, { useEffect, useState } from "react";
-import BlogCard from "../blogs/blogCard";
+import BlogCard from "../blogs/BlogCard";
 import SectionHeader from "../ui/SectionHeader";
 import categories, { Category } from "@/data/categoriesData";
 

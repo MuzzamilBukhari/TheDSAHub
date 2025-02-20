@@ -8,7 +8,7 @@ const BlogSection = () => {
   // const { blogsData } = useBlogs();
   return (
     <section className="text-gray-300 body-font bg-black/90">
-      <div className="container px-5 py-20 mx-auto ">
+      <div className="container px-6 py-20 mx-auto ">
         <div className="items-center text-center pt-10 pb-20">
           <SectionHeader
             heading="All Blogs"

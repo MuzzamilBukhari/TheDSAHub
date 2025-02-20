@@ -13,7 +13,7 @@ import OurMission from "./aboutpage-component/mission/OurMission";
 import CreatorAbout from "./aboutpage-component/creatorAbout/CreatorAbout";
 import ThankyouSection from "./aboutpage-component/thankyou/ThankyouSection";
 import ContactSection from "./contact/ContactSection";
-import BlogCard from "./blogs/blogCard";
+import BlogCard from "./blogs/BlogCard";
 import BlogSection from "./blogs/BlogSection";
 import BlogPageComp from "./blogs/BlogPageComp";
 import CategoryComp from "./categories/CategoryComp";
